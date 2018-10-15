@@ -1,2 +1,3 @@
 # RSMWeb
-Online Resume
+Online Resume - Xin Zhou
+HTML, CSS, JavaScript, PHP
