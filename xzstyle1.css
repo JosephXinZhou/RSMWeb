@@ -96,6 +96,56 @@ div.nav-horizontal-bar div.nav-dropdown:hover div.nav-dropdown-content {
 	display: block;
 }
 
+div.resume-content {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(220, 220, 220);
+	position: relative;
+	clear: both;
+}
+
+div.styles {
+	margin: 0;
+	padding: 1px 10px 10px 0;
+	width: 258px;
+	float: left;
+}
+
+h2 {
+	border-bottom: 1px solid rgb(221, 221, 221);
+	padding-bottom: 6px;
+	font-size: 1.35em;
+	/*font-weight: bold;*/
+}
+
+h2.styles-header {
+	margin-left: 16px;
+	border-bottom: 1px solid rgb(198, 198, 198);
+}
+
+button.styles-button {
+	background-color: rgb(147, 147, 121);
+	border: none;
+	color: white;
+	margin: 0 0 16px 16px;
+	padding: 12px 20px 12px 35px;
+	text-align: left;
+	text-decoration: none;
+	font-family: 'Open Sans', Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 0.88em;
+	cursor: pointer;
+	width: 226px;
+}
+
+div.skl-expr-edu-cert {
+	margin: 0 0 0 258px;
+	padding-left: 16px;
+	padding-right: 8px;
+	background-color: white;
+	border: 1px solid white;
+}
+
 @media (max-width: 950px) {
 	div.nav-horizontal-bar button.lw-button {
 		display: none;
@@ -103,5 +153,44 @@ div.nav-horizontal-bar div.nav-dropdown:hover div.nav-dropdown-content {
 
 	div.nav-horizontal-bar div.nav-dropdown {
 		display: inline-block;
+	}
+
+	div.styles {
+		width: 218px;
+	}
+
+	button.styles-button {
+		width: 186px;
+	}
+
+	div.skl-expr-edu-cert {
+		margin: 0px 0px 0px 218px;
+	}
+}
+
+@media (max-width: 752px) {
+	div.styles {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	button.styles-button {
+		width: 33.33%;
+		margin: 0 0 16px 0px;
+		text-align: center;
+		padding: 12px 20px;
+		float: left;
+		border-left: 1px solid rgb(198, 198, 198);
+	}
+
+	button.styles-button1 {
+		border: none;
+	}
+
+	div.skl-expr-edu-cert {
+		margin: 0px 0px 0px 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: white;
 	}
 }
