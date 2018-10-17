@@ -1,0 +1,107 @@
+div.nav-horizontal-bar {
+	background-color: rgb(67, 67, 67);
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: inline-block;
+	z-index: 1;
+}
+
+div.nav-horizontal-bar button.nav-button {
+	background-color: rgb(67, 67, 67);
+	border: none;
+	color: white;
+	margin: 0;
+	padding: 12px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Open Sans', Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.nav-horizontal-bar button.nav-button:last-child {
+	float: right;
+	margin: 0;
+}
+
+div.nav-horizontal-bar button.nav-button:hover {
+	background-color: rgb(7, 7, 7);
+}
+
+div.nav-horizontal-bar div.nav-dropdown {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+div.nav-horizontal-bar div.nav-dropdown button.menu-button {
+	background-color: rgb(67, 67, 67);
+	border: none;
+	color: white;
+	margin: 0;
+	padding: 13px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	text-shadow: 3px 0 white, -3px 0 white;
+	font-weight: bold;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.nav-horizontal-bar div.nav-dropdown button.menu-button:hover {
+	background-color: rgb(7, 7, 7);
+}
+
+div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid rgb(87, 87, 87);
+	position: absolute;
+	min-width: 215px;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	display: none;
+}
+
+div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button {
+	background-color: rgb(67, 67, 67);
+	border: none;
+	color: white;
+	margin: 0;
+	padding: 12px 20px;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	font-size: 0.95em;
+	font-weight: bold;
+	font-family: 'Open Sans', Calibri, sans-serif;
+	cursor: pointer;
+	overflow: hidden;
+	width: 215px;
+}
+
+div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button:hover {
+	background-color: rgb(7, 7, 7);
+}
+
+div.nav-horizontal-bar div.nav-dropdown:hover div.nav-dropdown-content {
+	display: block;
+}
+
+@media (max-width: 950px) {
+	div.nav-horizontal-bar button.lw-button {
+		display: none;
+	}
+
+	div.nav-horizontal-bar div.nav-dropdown {
+		display: inline-block;
+	}
+}
