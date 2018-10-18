@@ -138,6 +138,10 @@ button.styles-button {
 	width: 226px;
 }
 
+button.styles-button:hover {
+	background-color: rgb(107, 107, 81);
+}
+
 div.skl-expr-edu-cert {
 	margin: 0 0 0 258px;
 	padding-left: 16px;
