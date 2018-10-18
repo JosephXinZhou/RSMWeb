@@ -258,3 +258,15 @@ div.mobile-developer p.job-detail {
 		background-color: white;
 	}
 }
+
+@media (max-width: 560px) {
+	p.p-date {
+		float: none;
+		width: 100%;
+	}
+
+	div.job-content {
+		margin: 0px;
+		padding: 0px;
+	}
+}
