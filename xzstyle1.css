@@ -215,6 +215,74 @@ div.edu-content {
 	padding-left: 50px;
 }
 
+div.certification {
+	margin: 0;
+	padding: 0;
+}
+
+div.mcp {
+	overflow: auto;
+}
+
+p.mcp-cer-date {
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	float: left;
+	line-height: 72px;
+	font-weight: bold;
+}
+
+p.comptia-cer-date {
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	float: left;
+	line-height: 120px;
+	font-weight: bold;
+}
+
+div.mcp-desc {
+	margin: 0;
+	padding: 0px 0px 0px 50px;
+	overflow: auto;
+	line-height: 72px;
+}
+
+img.mcp-img {
+	width: 171px;
+	height: 72px;
+	float: right;
+}
+
+div.comptia-n {
+	overflow: auto;
+}
+
+div.comptia-desc {
+	margin: 0;
+	padding: 0px 0px 0px 50px;
+	overflow: auto;
+	line-height: 120px;
+}
+
+img.networkplus-img {
+	width: 125px;
+	height: 125px;
+	float: right;
+}
+
+div.mcp-desc span.mcp-desc-subtext, div.comptia-desc span.comptia-desc-subtext {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+abbr[title] {
+	border-bottom: none;
+	cursor: inherit;
+	text-decoration: none;
+}
+
 @media (max-width: 950px) {
 	div.styles {
 		width: 218px;
@@ -234,6 +302,30 @@ div.edu-content {
 
 	div.edu-content {
 		margin: 0px 0px 0px 100px;
+	}
+
+	p.mcp-cer-date {
+		width: 100px;
+	}
+
+	p.comptia-cer-date {
+		width: 100px;
+	}
+
+	div.mcp-desc span.mcp-desc-subtext {
+		display: none;
+	}
+
+	div.comptia-desc span.comptia-desc-subtext {
+		display: none;
+	}
+
+	div.mcp-desc span.modal-mcp-desc-subtext {
+		display: inline;
+	}
+
+	div.comptia-desc span.modal-comptia-desc-subtext {
+		display: inline;
 	}
 }
 
@@ -270,6 +362,22 @@ div.edu-content {
 		padding-right: 10px;
 		background-color: white;
 	}
+
+	div.mcp-desc span.mcp-desc-subtext {
+		display: inline;
+	}
+
+	div.comptia-desc span.comptia-desc-subtext {
+		display: inline;
+	}
+
+	div.mcp-desc span.modal-mcp-desc-subtext {
+		display: none;
+	}
+
+	div.comptia-desc span.modal-comptia-desc-subtext {
+		display: none;
+	}
 }
 
 @media (max-width: 560px) {
@@ -286,5 +394,13 @@ div.edu-content {
 	div.edu-content {
 		margin: 0px;
 		padding: 0px;
+	}
+
+	div.mcp-desc span.mcp-desc-text {
+		display: none;
+	}
+
+	div.comptia-desc span.comptia-desc-text {
+		display: none;
 	}
 }
