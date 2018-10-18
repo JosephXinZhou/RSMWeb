@@ -210,6 +210,11 @@ div.mobile-developer p.job-detail {
 	text-align: justify;
 }
 
+div.edu-content {
+	margin: 0px 0px 0px 130px;
+	padding-left: 50px;
+}
+
 @media (max-width: 950px) {
 	div.styles {
 		width: 218px;
@@ -221,6 +226,14 @@ div.mobile-developer p.job-detail {
 
 	div.skl-expr-edu-cert {
 		margin: 0px 0px 0px 218px;
+	}
+
+	div.job-content {
+		margin: 0px 0px 0px 100px;
+	}
+
+	div.edu-content {
+		margin: 0px 0px 0px 100px;
 	}
 }
 
@@ -266,6 +279,11 @@ div.mobile-developer p.job-detail {
 	}
 
 	div.job-content {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	div.edu-content {
 		margin: 0px;
 		padding: 0px;
 	}
