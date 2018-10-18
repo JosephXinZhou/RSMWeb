@@ -175,14 +175,6 @@ img.html5-icon {
 }
 
 @media (max-width: 950px) {
-	div.nav-horizontal-bar button.lw-button {
-		display: none;
-	}
-
-	div.nav-horizontal-bar div.nav-dropdown {
-		display: inline-block;
-	}
-
 	div.styles {
 		width: 218px;
 	}
@@ -197,6 +189,14 @@ img.html5-icon {
 }
 
 @media (max-width: 752px) {
+	div.nav-horizontal-bar button.lw-button {
+		display: none;
+	}
+
+	div.nav-horizontal-bar div.nav-dropdown {
+		display: inline-block;
+	}
+
 	div.styles {
 		width: 100%;
 		overflow: hidden;
