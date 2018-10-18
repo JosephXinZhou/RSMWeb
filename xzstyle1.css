@@ -174,6 +174,42 @@ img.html5-icon {
 	margin-left: 40px;
 }
 
+div li {
+	text-align: justify;
+}
+
+p.p-date {
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	float: left;
+	font-weight: bold;
+}
+
+div.job-content {
+	margin: 0px 0px 0px 130px;
+	padding-left: 50px;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+img.m-app-icon {
+	width: 32px;
+	height: 32px;
+	border-radius: 6px;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid rgb(241, 241, 241);
+}
+
+div.mobile-developer p.job-detail {
+	text-align: justify;
+}
+
 @media (max-width: 950px) {
 	div.styles {
 		width: 218px;
