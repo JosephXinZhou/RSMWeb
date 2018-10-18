@@ -150,6 +150,30 @@ div.skl-expr-edu-cert {
 	border: 1px solid white;
 }
 
+div.skills {
+	margin: 0;
+	padding: 0;
+}
+
+h2.skills-header {
+	margin-bottom: 10px;
+}
+
+ul.skills-detail {
+	margin-left: 24px;
+	margin-top: 4px;
+}
+
+img.html5-icon, img.css3-icon, img.js-icon, img.php-icon, img.mysql-icon, img.git-icon, img.rest-icon, img.arduino-icon {
+	margin-left: 16px;
+	width: auto;
+	height: 24px
+}
+
+img.html5-icon {
+	margin-left: 40px;
+}
+
 @media (max-width: 950px) {
 	div.nav-horizontal-bar button.lw-button {
 		display: none;
