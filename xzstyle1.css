@@ -146,6 +146,89 @@ div.skl-expr-edu-cert {
 	border: 1px solid white;
 }
 
+div.skills {
+    margin: 0;
+    padding: 0;
+}
+
+h2.skills-header {
+    margin-bottom: 10px;
+}
+
+div.js {
+    margin-top: 0;
+    padding-top: 0;
+    overflow: auto;
+}
+
+div.html5, div.css3, div.php, div.mysql, div.git, div.restapi, div.arduino {
+    margin-top: 5px;
+    overflow: auto;
+}
+
+p.skill-name {
+    margin: 0;
+    padding: 0;
+    /*display: inline-block;*/
+    width: 130px;
+    float: left;
+    font-size: 1em;
+    line-height: 56px;
+    font-weight: bold;
+}
+
+p.skill-bar {
+    /*float: left;
+ *     display: inline-block;*/
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    border-radius: 0.5em;
+    background-color: rgb(147, 167, 121);/*#009688;*/
+    overflow: auto;
+}
+
+img.js-icon {
+    padding-left: 69px;
+    float: right;
+}
+
+img.html5-icon {
+    padding-left: 85px;
+    float: right;
+}
+
+img.css3-icon {
+    padding-left: 85px;
+    float: right;
+}
+
+img.php-icon {
+    padding-left: 21px;
+    float: right;
+}
+
+img.mysql-icon {
+    padding-left: 16px;
+    float: right;
+}
+
+img.git-icon {
+    padding-left: 85px;
+    float: right;
+}
+
+img.rest-icon {
+    padding-left: 3px;
+    float: right;
+}
+
+img.arduino-icon {
+    padding-left: 43px;
+    float: right;
+}
+
 @media (max-width: 950px) {
 	div.nav-horizontal-bar button.lw-button {
 		display: none;
