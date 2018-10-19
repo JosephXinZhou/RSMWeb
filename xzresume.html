@@ -9,6 +9,7 @@
 	<meta name="author" content="Xin Zhou">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="none">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; frame-src 'self' https://www.google.com/recaptcha/; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com ">
 	<link rel="stylesheet" href="xzoverallstyle1.css?v=1.04">
 	<link rel="stylesheet" href="xzstyle1.css?v=4.65">
 	<link rel="icon" type="image/png" href="favicon1.png">
@@ -123,5 +124,81 @@
 			</div>
 		</div>
 	</div>
+	<!--Modals start here-->
+	<div id="modal-skills" class="modal">
+		<span class="close" id="close0">&#215;</span>
+		<h2 class="modal-header">Skills</h2>
+		<div class="modal-skills-icons">
+			<img src="HTML5_black_bg.png" class="html5-icon">
+			<img src="CSS3_black_bg.png" class="css3-icon">
+			<img src="JS.png" class="js-icon">
+			<img src="PHP.png" class="php-icon">
+			<img src="MySQL_black_bg.png" class="mysql-icon">
+			<img src="Git.png" class="git-icon">
+			<img src="REST.png" class="rest-icon">
+			<img src="Arduino.png" class="rest-icon">
+		</div>
+		<ul class="modal-ul-skills">
+			<li>Strong Web Application developing skills using HTML, CSS, JavaScript and PHP with MySQL</li>
+			<li>Experienced responsive User Interface designer for devices with different screen sizes</li>
+			<li>Proficient in Object-Oriented Programming</li>
+			<li>Sound understanding of Git workflows and commit etiquettes and enjoy team-developing environment</li>
+			<li>Have REST API developing experience that requesting services from public cloud</li>
+			<li>Familiar with coding for Arduino using C/C++</li>
+		</ul>
+	</div>
+	<div id="modal-experience" class="modal">
+		<span class="close" id="close1">&#215;</span>
+		<h2 class="modal-header">Relevant Experience</h2>
+		<div class="modal-mobile-developer">
+			<p class="p-date">2011 - 2016</p>
+			<div class="job-content">
+				<h3 class="job-title">Mobile Application Developer</h3>
+				<p class="job-detail">Released 11 Apps to Apple App Store, including,</p>
+				<p class="job-detail"><img src="ShoppingListLite-Icon.png" class="m-app-icon">Shoppers List - a grocery list application that supports iPhone, iPad and Apple Watch. The App can sort shopping items and has an input assistance system which can guess what user wants to punch in to save input time for the user.</p>
+				<p class="job-detail"><img src="Mason-Icon.png" class="m-app-icon"> Mason Photos - a photo processing application based on OpenGL. The App also utilized dispatch queues to support concurrency so that it can utilize multicore CPUs to improve efficiency and at the same time avoid complexity of manually creating threads. The App is developed for iPhone.</p>
+			</div>
+		</div>
+		<h2>Volunteer Experience</h2>
+		<div class="website-admin">
+			<p class="p-date">2017 - Present</p>
+			<div class="job-content">
+				<h3 class="job-title">Website Administration – Stoneybrook Parent School Council</h3>
+				<p class="job-detail">Colaborate with school council communication group members and management on website design and updates. Make sure changes to website are made on time and well communicated before publishing</p>
+			</div>
+		</div>
+	</div>
+	<div id="modal-education" class="modal">
+		<span class="close" id="close2">&#215;</span>
+		<h2 class="modal-header">Education</h2>
+		<div class="modal-fanshawe">
+			<p class="p-date">2017 - 2018</p>
+			<div class="edu-content">
+			<h3 class="edu-title">Network and Security Architecture Post-Graduate Certificate Program – Fanshawe College, London, ON</h3>
+			<p class="edu-detail">Fanshawe President’s Honour Roll recipient, GPA 4.1</p>
+			</div>
+		</div>
+	</div>
+	<div id="modal-certification" class="modal">
+		<span class="close" id="close3">&#215;</span>
+		<h2 class="modal-header">Certifications</h2>
+		<div class="modal-mcp-comptia">
+			<div class="modal-mcp">
+				<p class="mcp-cer-date">2017</p>
+				<div class="mcp-desc">
+					<img src="MCP-Logo-Wht.png" alt="MCP Logo" class="mcp-img">
+					<span class="mcp-desc-text"><abbr title="Computing Technology Industry Association">MCP</abbr><span class="mcp-desc-subtext modal-mcp-desc-subtext"> - Windows Server</span></span>
+				</div>
+			</div>
+			<div class="comptia-n">
+				<p class="comptia-cer-date">2018</p>
+				<div class="comptia-desc">
+					<img src="NetworkPlus-Logo.png" alt="MCP Logo" class="networkplus-img">
+					<span class="comptia-desc-text"><abbr title="Computing Technology Industry Association">CompTIA</abbr><span class="comptia-desc-subtext modal-comptia-desc-subtext"> Network+ Certified</span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="xzresumescript.js"></script>
 </body>
 </html>
