@@ -30,6 +30,71 @@
 		<div class="nav-horizontal-bar">
 			<button class="home-button">Home</button>
 		</div>
+		<div class="contact-content">
+			<div class="message-me">
+				<form method="post" action="" id="contact-form">
+					<div class="message-item message-me-prompt">Leave Xin Zhou a message,</div>
+					<div class="message-item">
+						<div class="message-item-name">
+							<label for="hr-name">Your Name</label><span class="required-star">*</span>
+						</div>
+						<div class="message-item-input">
+							<input type="text" id="hr-name" name="hrname" placeholder="Your name.." autofocus required pattern="([a-zA-Z](-| |'|\. ?|, )?){1,99}[a-zA-Z\. ]" title="Name can contain &quot;a-z&quot;, &quot;A-Z&quot;, space, dot, single quotation mark and hyphen. It must start with an alphabet and end with an alphabet, a dot or a space. It is at most 100 characters long. Space, dot, single quotation mark and hypen can not be consecutive.">
+						</div>
+					</div>
+					<div class="message-item">
+						<div class="message-item-name">
+							<label for="organization-name">Organization</label>
+						</div>
+						<div class="message-item-input">
+							<input type="text" id="organization-name" name="organizationname" placeholder="Name of your organization.." pattern=".{0,100}" title="Maximum 100 characters.">
+						</div>
+					</div>
+					<div class="message-item">
+						<div class="message-item-name">
+							<label for="phone-number">Phone</label>
+						</div>
+						<div class="message-item-input">
+							<input type="text" id="phone-number" name="phonenumber" placeholder="555-555-5555" pattern="(\+?\d{1,2}[ -.]?)?(\(\d{3}\)|\d{3})[ -.]?\d{3}[ -.]?\d{4}\s?" title="555-555-5555">
+						</div>
+					</div>
+					<div class="message-item">
+						<div class="message-item-name">
+							<label for="email">E-mail</label><span class="required-star">*</span>
+						</div>
+						<div class="message-item-input">
+							<input type="text" id="email" name="email" placeholder="Your E-mail address.." required pattern="(?:[a-zA-Z0-9_%+-]\.?){1,400}[a-zA-Z0-9_%+-]@(?:[a-zA-Z0-9-]{1,100}\.){1,30}(?:(?:MUSEUM|museum)|[a-zA-Z]{2,4})" title="E-mail address is composed of a-z, A-Z, 0-9, @, _ - . + and %.">
+						</div>
+					</div>
+					<div class="message-item">
+						<div class="message-item-name">
+							<label for="message-body">Message</label>
+							<p class="message-body-length"></p>
+						</div>
+						<div class="message-item-input">
+							<textarea id="message-body" name="messagebody" placeholder="Please leave your message here.." maxlength="1200" title="Maximum 1200 characters."></textarea>
+						</div>
+					</div>
+					<div class="recaptcha">
+						<div class="g-recaptcha" data-expired-callback="disableSubmit" data-callback="enableSubmit" data-sitekey="6LcZomoUAAAAAJBMyJZ2fraOWEaKME2HzdqCS6WY"></div>
+					</div>
+					<div class="message-item">
+						<!--<input class="form-submit" disabled="disabled" type="submit" value="Send">-->
+						<button class="form-submit" type="submit" form="contact-form">Send</button>
+					</div>
+				</form>
+			</div>
+			<div class="call-email">
+				<div class="call-me">
+					<p>Or call me <a href="tel:5198684698">519-868-4698</a>.</p>
+				</div>
+				<div class="email-me">
+					<p>Or send me an email <a href="mailto:joseph.xin.zhou@gmail.com">joseph.xin.zhou@gmail.com</a>.</p>
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<script src="xzcontactscript.js"></script>
 </body>
 </html>
