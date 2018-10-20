@@ -283,6 +283,27 @@ abbr[title] {
 	text-decoration: none;
 }
 
+button.floating-contact-button {
+	position: fixed;
+	left: 16px;
+	bottom: 16px;
+	background-color: rgb(147, 147, 121);
+	border: none;
+	color: white;
+	padding: 12px 20px 12px 35px;
+	text-align: left;
+	text-decoration: none;
+	font-family: 'Open Sans', Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 0.88em;
+	cursor: pointer;
+	width: 226px;
+}
+
+button.floating-contact-button:hover {
+	background-color: rgb(107, 107, 81);
+}
+
 div.modal {
 	display: none;
 	position: fixed;
@@ -366,6 +387,10 @@ h2.modal-header {
 	div.comptia-desc span.modal-comptia-desc-subtext {
 		display: inline;
 	}
+
+	button.floating-contact-button {
+		width: 186px;
+	}
 }
 
 @media (max-width: 752px) {
@@ -423,6 +448,14 @@ h2.modal-header {
 
 	div.comptia-desc span.modal-comptia-desc-subtext {
 		display: none;
+	}
+
+	button.floating-contact-button {
+		position: static;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 12px 20px;
 	}
 }
 
