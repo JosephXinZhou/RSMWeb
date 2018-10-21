@@ -56,6 +56,39 @@ function navMenuButtonClicked() {
 	}
 }
 
+var floatingContactButton = document.getElementsByClassName("floating-contact-button");
+var stylesDiv = document.getElementsByClassName("styles");
+go();
+window.addEventListener('resize', go);
+function go() {
+	var stylesDivRect = stylesDiv[0].getBoundingClientRect();
+	var floatingContactButtonRect = floatingContactButton[0].getBoundingClientRect();
+	var stylesDivRectBottom;
+	if (stylesDivRect.height > 0) {
+		stylesDivRectBottom = stylesDivRect.y + stylesDivRect.height;
+	}
+	else {
+		stylesDivRectBottom = stylesDivRect.y;
+	}
+	var floatingContactButtonRectTop;
+	var floatingContactButtonAbsHeight = Math.abs(floatingContactButtonRect.height);
+	if (floatingContactButtonRect.height > 0) {
+		floatingContactButtonRectTop = floatingContactButtonRect.y;
+	}
+	else {
+		floatingContactButtonRectTop = floatingContactButtonRect.y + floatingContactButtonRect.height;
+	}
+
+	if (stylesDivRectBottom + 16 > floatingContactButtonRectTop) {
+		var bottomValue = -floatingContactButtonAbsHeight;
+		floatingContactButton[0].style.bottom = bottomValue + "px";
+	}
+
+	if (stylesDivRectBottom + 20 + floatingContactButtonAbsHeight < floatingContactButtonRectTop) {
+		floatingContactButton[0].style.bottom = "16px";
+	}
+}
+
 window.onscroll = function() { windowOnScroll()};
 
 function windowOnScroll() {
@@ -68,4 +101,5 @@ function windowOnScroll() {
 		navHorizontalBar[0].style.boxShadow = "none";
 
 	}
+	go();
 }
