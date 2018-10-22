@@ -164,14 +164,46 @@ ul.skills-detail {
 	margin-top: 4px;
 }
 
-img.html5-icon, img.css3-icon, img.js-icon, img.php-icon, img.mysql-icon, img.git-icon, img.rest-icon, img.arduino-icon {
-	margin-left: 16px;
-	width: auto;
-	height: 24px
+div.skills-icons {
+    margin: 8px 0;
+    padding: 0 0 0 32px;
+}
+
+img.skills-icon {
+    margin-left: 8px;
+    height: 24px;
 }
 
 img.html5-icon {
-	margin-left: 40px;
+    width: 17px;
+}
+
+img.css3-icon {
+    width: 17px;
+}
+
+img.js-icon {
+    width: 24px;
+}
+
+img.php-icon {
+    width: 45px;
+}
+
+img.mysql-icon {
+    width: 47px;
+}
+
+img.git-icon {
+    width: 24px;
+}
+
+img.rest-icon {
+    width: 51px;
+}
+
+img.arduino-icon {
+    width: 35px;
 }
 
 div li {
@@ -206,7 +238,7 @@ img.m-app-icon {
 	border: 1px solid rgb(241, 241, 241);
 }
 
-div.mobile-developer p.job-detail {
+p.job-detail {
 	text-align: justify;
 }
 
