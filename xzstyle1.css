@@ -100,8 +100,8 @@ div.resume-content {
 	margin: 0;
 	padding: 0;
 	background-color: rgb(220, 220, 220);
-	position: relative;
-	clear: both;
+	/*position: relative;
+	clear: both;*/
 }
 
 div.styles {
