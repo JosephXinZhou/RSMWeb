@@ -11,6 +11,11 @@ var contactButton = document.getElementsByClassName("contact-button");
 var stylesButtons = document.getElementsByClassName("styles-button");
 var headElements = document.getElementsByTagName("head");
 
+window.onload = pageLoaded;
+function pageLoaded() {
+	sessionStorage.setItem("cssIndex", 0);
+}
+
 for (var i = 0; i < 4; i++) {
 	lwButtons[i].addEventListener('click', showModalButtonClicked);
 	dropdownButtons[i].addEventListener('click', showModalButtonClicked);
@@ -63,6 +68,8 @@ for (var i = 0; i < 3; i++) {
 }
 
 function swapCSSButtonClicked() {
+	sessionStorage.setItem("cssIndex", Number(this.value));
+
 	var currentCssLinks = document.getElementsByTagName("link");
 
 	var cssFileNumber = Number(this.value) + 1;
@@ -79,6 +86,19 @@ function swapCSSButtonClicked() {
 
 	headElements[0].replaceChild(newLink1, currentCssLinks[0]);
 	headElements[0].replaceChild(newLink2, currentCssLinks[1]);
+
+	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
+		if (window.pageYOffset > 120) {
+			navHorizontalBar[0].style.boxShadow = "0 3px 6px 0px rgba(0, 0, 0, 0.3)";
+		}
+		else {
+			navHorizontalBar[0].style.boxShadow = "none";
+		}
+	}
+	else if (cssStyleIndex == "1") {
+		navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
+	}
 }
 
 var floatingContactButton = document.getElementsByClassName("floating-contact-button");
@@ -114,13 +134,13 @@ function go() {
 	}
 }
 
-var currentCssLinks = document.getElementsByTagName("link");
+/*var currentCssLinks = document.getElementsByTagName("link");*/
 window.onscroll = function() { windowOnScroll()};
 
 function windowOnScroll() {
 	navDropDownContent[0].style.display = "none";
 	navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
-	var cssFile1Url = currentCssLinks[0].href;
+	/*var cssFile1Url = currentCssLinks[0].href;
 	var currentStyleArr = cssFile1Url.match(/xzoverallstyle[0-9]\.css/g);
 	if (currentStyleArr) {
 		var currentStyleStr = currentStyleArr[currentStyleArr.length - 1];
@@ -135,6 +155,15 @@ function windowOnScroll() {
 		}
 		else if (currentStyleNumberStr == "2") {
 			navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
+		}
+	}*/
+	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
+		if (window.pageYOffset > 120) {
+			navHorizontalBar[0].style.boxShadow = "0 3px 6px 0px rgba(0, 0, 0, 0.3)";
+		}
+		else {
+			navHorizontalBar[0].style.boxShadow = "none";
 		}
 	}
 
