@@ -389,11 +389,11 @@ h2.modal-header {
 	}
 
 	div.job-content {
-		margin: 0px 0px 0px 100px;
+		padding-left: 20px;
 	}
 
 	div.edu-content {
-		margin: 0px 0px 0px 100px;
+		padding-left: 20px;
 	}
 
 	p.mcp-cer-date {
