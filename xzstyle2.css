@@ -1,0 +1,398 @@
+div.nav-horizontal-bar {
+	width: 258px;
+	background-color: rgb(255, 255, 255);
+	padding: 0;
+	margin: 16px 0 0 16px;
+	border: 1px solid rgb(220, 220, 220);
+	float: left;
+	clear: left;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+div.nav-horizontal-bar button.nav-button {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid rgb(220, 220, 220);
+	margin: 0;
+	padding: 12px 20px;
+	text-align: left;
+	text-decoration: none;
+	font-family: 'Roboto', 'Open Sans', Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.nav-horizontal-bar button.nav-button:hover {
+	background-color: rgb(27, 27, 27);
+	color: white;
+}
+
+div.nav-horizontal-bar button.nav-button:last-child {
+	border-bottom: none;
+}
+
+div.nav-horizontal-bar div.nav-dropdown {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+div.nav-horizontal-bar div.nav-dropdown button.menu-button {
+	background-color: rgb(67, 67, 67);
+	border: none;
+	color: white;
+	margin: 0;
+	padding: 13px 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	text-shadow: 3px 0 white, -3px 0 white;
+	font-weight: bold;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.nav-horizontal-bar div.nav-dropdown button.menu-button:hover {
+	background-color: rgb(7, 7, 7);
+}
+
+div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid rgb(87, 87, 87);
+	position: absolute;
+	min-width: 215px;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	display: none;
+}
+
+div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button {
+	background-color: rgb(67, 67, 67);
+	border: none;
+	color: white;
+	margin: 0;
+	padding: 12px 20px;
+ 	text-align: left;
+	text-decoration: none;
+	display: block;
+	font-size: 0.95em;
+	font-weight: bold;
+	font-family: 'Roboto', 'Open Sans', Calibri, sans-serif;
+	cursor: pointer;
+	overflow: hidden;
+	width: 215px;
+}
+
+div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button:hover {
+	background-color: rgb(7, 7, 7);
+}
+
+div.nav-horizontal-bar div.nav-dropdown:hover div.nav-dropdown-content {
+	display: block;
+}
+
+div.styles {
+	width: 258px;
+	background-color: rgb(255, 255, 255);
+	padding: 0;
+	margin: 16px 0 0 16px;
+	border: 1px solid rgb(220, 220, 220);
+	float: left;
+	clear: left;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+	border-bottom: 1px solid rgb(221, 221, 221);
+	padding-bottom: 6px;
+	font-size: 1.29em;
+}
+
+h2.styles-header {
+	margin: 0;
+	padding: 12px 20px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+button.styles-button {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	margin: 0;
+	padding: 12px 20px;
+	text-align: left;
+	text-decoration: none;
+	font-family: 'Roboto', 'Open Sans', Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 0.88em;
+	cursor: pointer;
+	width: 100%;
+}
+
+button.styles-button:hover {
+	color: white;
+	background-color: rgb(27, 27, 27);
+}
+
+button.styles-button:last-child {
+	border-bottom: none;
+}
+
+div.resume-content {
+	margin: 0 0 0 290px;
+	padding: 16px 0 0 0;
+}
+
+div.skl-expr-edu-cert {
+	margin: 0 16px 16px 0;
+	border: 1px solid rgb(220, 220, 220);
+	padding-left: 16px;
+	padding-right: 12px;
+	background-color: white;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	position: absolute;
+}
+
+div.skills {
+	margin: 0;
+	padding: 0;
+}
+
+h2.skills-header {
+	margin-bottom: 10px;
+}
+
+ul.skills-detail {
+	margin-left: 24px;
+	margin-top: 4px;
+}
+
+div.skills-icons {
+	margin: 8px 0;
+	padding: 0 0 0 32px;
+}
+
+img.skills-icon {
+	margin-left: 8px;
+	height: 24px;
+}
+
+img.html5-icon {
+	width: 17px;
+}
+
+img.css3-icon {
+	width: 17px;
+}
+
+img.js-icon {
+	width: 24px;
+}
+
+img.php-icon {
+	width: 45px;
+}
+
+img.mysql-icon {
+	width: 47px;
+}
+
+img.git-icon {
+	width: 24px;
+}
+
+img.rest-icon {
+	width: 51px;
+}
+
+img.arduino-icon {
+	width: 35px;
+}
+
+div.relevant-experience {
+	margin: 0;
+	padding: 0;
+}
+
+div li {
+	text-align: justify;
+	margin-bottom: 3px;
+}
+
+p.p-date {
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	float: left;
+	font-weight: bold;
+}
+
+div.job-content {
+	margin: 0px 0px 0px 130px;
+	padding-left: 50px;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+img.m-app-icon {
+	width: 32px;
+	height: 32px;
+	border-radius: 6px;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid rgb(241, 241, 241);
+}
+
+p.job-detail {
+	text-align: justify;
+}
+
+div.edu-content {
+	margin: 0px 0px 0px 130px;
+	padding-left: 50px;
+}
+
+div.certification {
+	margin: 0;
+	padding: 0;
+}
+
+div.mcp {
+	overflow: auto;
+}
+
+p.mcp-cer-date {
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	float: left;
+	line-height: 72px;
+	font-weight: bold;
+}
+
+p.comptia-cer-date {
+	margin: 0;
+	padding: 0;
+	width: 130px;
+	float: left;
+	line-height: 120px;
+	font-weight: bold;
+}
+
+div.mcp-desc {
+	margin: 0;
+	padding: 0px 0px 0px 50px;
+	overflow: auto;
+	line-height: 72px;
+}
+
+img.mcp-img {
+	width: 171px;
+	height: 72px;
+	float: right;
+}
+
+div.comptia-n {
+	overflow: auto;
+}
+
+div.comptia-desc {
+	margin: 0;
+	padding: 0px 0px 0px 50px;
+	overflow: auto;
+	line-height: 120px;
+}
+
+img.networkplus-img {
+	width: 125px;
+	height: 125px;
+	float: right;
+}
+
+div.mcp-desc span.mcp-desc-subtext, div.comptia-desc span.comptia-desc-subtext {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+abbr[title] {
+	border-bottom: none;
+	cursor: inherit;
+	text-decoration: none;
+}
+
+button.floating-contact-button {
+	position: fixed;
+	left: 16px;
+	bottom: 16px;
+	background-color: rgb(255, 255, 255);
+	border: none;
+	padding: 12px 20px 12px 20px;
+	text-align: left;
+	text-decoration: none;
+	font-family: 'Roboto', 'Open Sans', Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 0.88em;
+	cursor: pointer;
+	width: 258px;
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+}
+	
+button.floating-contact-button:hover {
+	color: white;
+	background-color: rgb(27, 27, 27);
+}
+
+div.modal {
+	display: none;
+	position: fixed;
+	z-index: 3;
+	padding: 70px 36px 25px 18px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.92);
+	color: rgb(241, 241, 241);
+}
+
+span.close {
+	position: fixed;
+	padding: 15px 20px 20px 20px;
+	top: 0;
+	right: 0;
+	color: rgb(241, 241, 241);
+	font-size: 40px;
+	font-weight: 100;
+	font-family: Arial, sans-serif;
+	transition: 0.3s;
+}
+
+span.close:hover, span.close:focus {
+	color: rgb(187, 187, 187);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h2.modal-header {
+	border-bottom: 1px solid rgb(151, 151, 151);
+	padding-bottom: 6px;
+	color: rgb(241, 241, 241);
+}
