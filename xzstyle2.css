@@ -29,7 +29,7 @@ div.nav-horizontal-bar button.nav-button {
 }
 
 div.nav-horizontal-bar button.nav-button:hover {
-	background-color: rgb(27, 27, 27);
+	background-color: rgb(48, 132, 227);
 	color: white;
 }
 
@@ -139,9 +139,13 @@ button.styles-button {
 	width: 100%;
 }
 
+button.styles-button:focus {
+	outline: 0;
+}
+
 button.styles-button:hover {
 	color: white;
-	background-color: rgb(27, 27, 27);
+	background-color: rgb(48, 132, 227);
 }
 
 button.styles-button:last-child {
@@ -358,7 +362,7 @@ button.floating-contact-button {
 	
 button.floating-contact-button:hover {
 	color: white;
-	background-color: rgb(27, 27, 27);
+	background-color: rgb(48, 132, 227);
 }
 
 div.modal {
