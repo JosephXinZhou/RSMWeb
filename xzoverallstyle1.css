@@ -61,13 +61,48 @@ i.material-icons.md-18 {
 }
 
 @media (max-width: 752px) {
-	p.personal-info-phone {
- 		display: none;
+	div.banner {
+		height: 164px;
+	}
+
+	p.personal-info {
+		display: inline-block;
+		float: left;
+	}
+
+	p.personal-info-email {
+		clear: left;
 	}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 410px) {
+	div.banner {
+		height: 226px;
+	}
+
+	p.personal-info-location {
+		clear: left;
+	}
+
+	p.personal-info-phone {
+		clear: left;
+	}
+}
+
+@media (max-width: 248px) {
+	div.banner {
+		height: 140px;
+	}
+
+	p.personal-info-career {
+		display: none;
+	}
+
 	p.personal-info-email {
  		display: none;
+	}
+
+	p.personal-info-phone {
+		display: none;
 	}
 }
