@@ -13,6 +13,7 @@ div.nav-horizontal-bar {
 
 div.nav-horizontal-bar button.nav-button {
 	background-color: rgb(255, 255, 255);
+	color: rgb(37, 37, 37);
 	width: 100%;
 	border: none;
 	border-bottom: 1px solid rgb(220, 220, 220);
@@ -124,6 +125,7 @@ h2.styles-header {
 
 button.styles-button {
 	background-color: rgb(255, 255, 255);
+	color: rgb(37, 37, 37);
 	border: none;
 	border-bottom: 1px solid rgb(221, 221, 221);
 	margin: 0;
@@ -339,6 +341,7 @@ button.floating-contact-button {
 	left: 16px;
 	bottom: 16px;
 	background-color: rgb(255, 255, 255);
+	color: rgb(37, 37, 37);
 	border: none;
 	padding: 12px 20px 12px 20px;
 	text-align: left;
