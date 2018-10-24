@@ -58,3 +58,58 @@ i.material-icons.md-18 {
 	vertical-align: middle;
 	padding-bottom: 3px;
 }
+
+@media (max-width: 752px) {
+	div.banner {
+		width: auto;
+		float: none;
+		height: 164px;
+		margin: 10px 10px 0 10px;
+	}
+
+	h1 {
+		padding-top: 20px;
+		line-height: 70px;
+	}
+
+	p.personal-info {
+		display: inline-block;
+		float: left;
+	}
+
+	p.personal-info-email {
+		clear: left;
+	}
+}
+
+@media (max-width: 410px) {
+	div.banner {
+		height: 226px;
+	}
+
+	p.personal-info-location {
+		clear: left;
+	}
+
+	p.personal-info-phone {
+		clear: left;
+	}
+}
+
+@media (max-width: 248px) {
+	div.banner {
+		height: 140px;
+	}
+
+	p.personal-info-career {
+		display: none;
+	}
+
+	p.personal-info-email {
+		display: none;
+	}
+
+	p.personal-info-phone {
+		display: none;
+	}
+}
