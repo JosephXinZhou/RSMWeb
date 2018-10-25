@@ -1,5 +1,6 @@
 var lwButtons = document.getElementsByClassName('lw-button');
 var dropdownButtons = document.getElementsByClassName('dropdown-button');
+var modalWrapper = document.getElementsByClassName("modal-wrapper");
 var modals = document.getElementsByClassName("modal");
 var spans = document.getElementsByClassName("close");
 var mainPageWrapper = document.getElementsByClassName("page-wrapper");
@@ -23,6 +24,7 @@ for (var i = 0; i < 4; i++) {
 }
 
 function showModalButtonClicked() {
+	modalWrapper[0].style.display = "block";
 	modals[Number(this.value)].style.display = "block";
 	mainPageWrapper[0].style.overflow = "hidden";
 	mainPageWrapper[0].style.height = "100%";
@@ -30,6 +32,7 @@ function showModalButtonClicked() {
 }
 
 function closeModalElementClicked() {
+	modalWrapper[0].style.display = "none";
 	modals[Number(this.id.slice(-1))].style.display = "none";  
 	mainPageWrapper[0].style.overflow = "visible";
 	mainPageWrapper[0].style.height = "auto";
