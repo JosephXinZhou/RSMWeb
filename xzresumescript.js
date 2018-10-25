@@ -40,26 +40,44 @@ navDropDown[0].addEventListener('mouseover', navDropdownMouseover);
 
 function navDropdownMouseover() {
 	navDropDownContent[0].style.display = "block";
-	navMenuButton[0].style.backgroundColor = "rgb(7, 7, 7)";
+	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
+		navMenuButton[0].style.backgroundColor = "rgb(7, 7, 7)";
+		navMenuButton[0].style.color = "rgb(255, 255, 255)";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
+	}
+	else if (cssStyleIndex == 1) {
+		navMenuButton[0].style.backgroundColor = "rgb(255, 255, 255)";
+		navMenuButton[0].style.color = "rgb(32, 112, 167)";
+		navMenuButton[0].style.textShadow = "3px 0 rgb(32, 112, 167), -3px 0 rgb(32, 112, 167)";
+	}
 }
 
 navDropDown[0].addEventListener('mouseout', navDropdownMouseout);
 
 function navDropdownMouseout() {
 	navDropDownContent[0].style.display = "none";
-	navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
+		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+		navMenuButton[0].style.color = "rgb(255, 255, 255)";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
+	}
+	else if (cssStyleIndex == 1) {
+		navMenuButton[0].style.backgroundColor = "rgb(255, 255, 255)";
+		navMenuButton[0].style.color = "rgb(37, 37, 37)";
+		navMenuButton[0].style.textShadow = "3px 0 black, -3px 0 black";
+	}
 }
 
 navMenuButton[0].addEventListener('click', navMenuButtonClicked);
 
 function navMenuButtonClicked() {
 	if (navDropDownContent[0].style.display == "none") {
-		navDropDownContent[0].style.display = "block";
-		navMenuButton[0].style.backgroundColor = "rgb(7, 7, 7)";
+		navDropdownMouseover();
 	}
 	else {
-		navDropDownContent[0].style.display = "none";
-		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+		navDropdownMouseout();
 	}
 }
 
@@ -99,6 +117,7 @@ function swapCSSButtonClicked() {
 	else if (cssStyleIndex == "1") {
 		navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
 	}
+	navDropdownMouseout();
 }
 
 var floatingContactButton = document.getElementsByClassName("floating-contact-button");
@@ -138,8 +157,20 @@ function go() {
 window.onscroll = function() { windowOnScroll()};
 
 function windowOnScroll() {
+	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+
 	navDropDownContent[0].style.display = "none";
-	navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
+		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+		navMenuButton[0].style.color = "rgb(255, 255, 255)";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
+	}
+	else if (cssStyleIndex == 1)
+	{
+		navMenuButton[0].style.backgroundColor = "rgb(255, 255, 255)";
+		navMenuButton[0].style.color = "rgb(37, 37, 37)";
+		navMenuButton[0].style.textShadow = "3px 0 black, -3px 0 black";
+	}
 	/*var cssFile1Url = currentCssLinks[0].href;
 	var currentStyleArr = cssFile1Url.match(/xzoverallstyle[0-9]\.css/g);
 	if (currentStyleArr) {
@@ -157,7 +188,6 @@ function windowOnScroll() {
 			navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
 		}
 	}*/
-	var cssStyleIndex = sessionStorage.getItem("cssIndex");
 	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
 		if (window.pageYOffset > 120) {
 			navHorizontalBar[0].style.boxShadow = "0 3px 6px 0px rgba(0, 0, 0, 0.3)";

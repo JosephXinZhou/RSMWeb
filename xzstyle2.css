@@ -33,6 +33,11 @@ div.nav-horizontal-bar button.nav-button:hover {
 	color: white;
 }
 
+div.nav-horizontal-bar button.contact-button:hover {
+	background-color: rgb(255, 255, 255);
+	color: rgb(32, 112, 167);
+}
+
 div.nav-horizontal-bar button.nav-button:last-child {
 	border-bottom: none;
 }
@@ -44,28 +49,29 @@ div.nav-horizontal-bar div.nav-dropdown {
 }
 
 div.nav-horizontal-bar div.nav-dropdown button.menu-button {
-	background-color: rgb(67, 67, 67);
+	background-color: rgb(255, 255, 255);
 	border: none;
-	color: white;
+	color: rgb(37, 37, 37);
 	margin: 0;
-	padding: 13px 20px;
+	padding: 11px 20px;
 	text-align: center;
 	text-decoration: none;
 	font-size: 1em;
-	text-shadow: 3px 0 white, -3px 0 white;
+	text-shadow: 3px 0 black, -3px 0 black;
 	font-weight: bold;
 	cursor: pointer;
 	overflow: hidden;
 }
 
 div.nav-horizontal-bar div.nav-dropdown button.menu-button:hover {
-	background-color: rgb(7, 7, 7);
+	background-color: rgb(255, 255, 255);
+	color: rgb(32, 112, 167);
+	text-shadow: 3px 0 rgb(32, 112, 167), -3px 0 rgb(32, 112, 167);
 }
 
 div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content {
 	margin: 0;
 	padding: 0;
-	border-top: 1px solid rgb(87, 87, 87);
 	position: absolute;
 	min-width: 215px;
 	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.3);
@@ -74,12 +80,13 @@ div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content {
 }
 
 div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button {
-	background-color: rgb(67, 67, 67);
+	background-color: rgb(255, 255, 255);
 	border: none;
-	color: white;
+	border-top: 1px solid rgb(220, 220, 220);
+	color: rgb(37, 37, 37);
 	margin: 0;
 	padding: 12px 20px;
- 	text-align: left;
+	text-align: left;
 	text-decoration: none;
 	display: block;
 	font-size: 0.95em;
@@ -91,7 +98,8 @@ div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown
 }
 
 div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button:hover {
-	background-color: rgb(7, 7, 7);
+	background-color: rgb(255, 255, 255);
+	color: rgb(32, 112, 167);
 }
 
 div.nav-horizontal-bar div.nav-dropdown:hover div.nav-dropdown-content {
