@@ -117,13 +117,24 @@ div.styles {
 h2 {
 	border-bottom: 1px solid rgb(221, 221, 221);
 	padding-bottom: 6px;
-	font-size: 1.20em;
+	font-size: 1.28em;
+	font-weight: 400;
 }
 
 h2.styles-header {
 	margin: 0;
 	padding: 12px 20px;
 	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+h2.styles-header:before {
+	font-family: "Material Icons";
+	content: "\E1BD";
+	font-size: 24px;
+	margin: 0 8px 0 0;
+	line-height: 26px;
+	vertical-align: top;
+	color: rgb(0, 150, 136);
 }
 
 button.styles-button {
@@ -181,6 +192,16 @@ h2.skills-header {
 	margin-bottom: 10px;
 }
 
+h2.skills-header:before {
+	font-family: "Material Icons";
+	content: "\E8D0";
+	font-size: 24px;
+	margin: 0 8px 0 0;
+	line-height: 26px;
+	vertical-align: top;
+	color: rgb(0, 150, 136);
+}
+
 ul.skills-detail {
 	margin-left: 24px;
 	margin-top: 4px;
@@ -228,6 +249,26 @@ img.arduino-icon {
 	width: 35px;
 }
 
+h2.relevant-experience-header:before {
+	font-family: "Material Icons";
+	content: "\EB3F";
+	font-size: 24px;
+	margin: 0 8px 0 0;
+	line-height: 26px;
+	vertical-align: top;
+	color: rgb(0, 150, 136);
+}
+
+h2.volunteer-experience-header:before {
+	font-family: "Material Icons";
+	content: "\E174";
+	font-size: 24px;
+	margin: 0 8px 0 0;
+	line-height: 26px;
+	vertical-align: top;
+	color: rgb(0, 150, 136);
+}
+
 div.relevant-experience {
 	margin: 0;
 	padding: 0;
@@ -270,6 +311,16 @@ p.job-detail {
 	text-align: justify;
 }
 
+h2.education-header:before {
+	font-family: "Material Icons";
+	content: "\E80C";
+	font-size: 24px;
+	margin: 0 8px 0 0;
+	line-height: 26px;
+	vertical-align: top;
+	color: rgb(0, 150, 136);
+}
+
 div.edu-content {
 	margin: 0px 0px 0px 130px;
 	padding-left: 50px;
@@ -278,6 +329,16 @@ div.edu-content {
 div.certification {
 	margin: 0;
 	padding: 0;
+}
+
+h2.certification-header:before {
+	font-family: "Material Icons";
+	content: "\E617";
+	font-size: 24px;
+	margin: 0 8px 0 0;
+	line-height: 26px;
+	vertical-align: top;
+	color: rgb(0, 150, 136);
 }
 
 div.mcp {

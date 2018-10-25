@@ -58,6 +58,7 @@ i.material-icons.md-18 {
 	line-height: 30px;
 	vertical-align: middle;
 	padding-bottom: 3px;
+	color: rgb(0, 150, 136);
 }
 
 @media (max-width: 752px) {
