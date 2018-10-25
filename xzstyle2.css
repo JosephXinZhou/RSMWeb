@@ -33,11 +33,6 @@ div.nav-horizontal-bar button.nav-button:hover {
 	color: white;
 }
 
-div.nav-horizontal-bar button.contact-button:hover {
-	background-color: rgb(255, 255, 255);
-	color: rgb(32, 112, 167);
-}
-
 div.nav-horizontal-bar button.nav-button:last-child {
 	border-bottom: none;
 }
@@ -467,6 +462,11 @@ h2.modal-header {
 		clear: none;
 	}
 
+	div.nav-horizontal-bar button.contact-button:hover {
+		background-color: rgb(255, 255, 255);
+		color: rgb(32, 112, 167);
+	}
+
 	div.nav-horizontal-bar button.lw-button {
 		display: none;
 	}
@@ -492,7 +492,8 @@ h2.modal-header {
 	}
 
 	h2.styles-header {
-		margin-left: 0px;
+		margin-left: 0;
+		padding-left: 0;
 		border-bottom: 1px solid rgb(221, 221, 221);
 	}
 
