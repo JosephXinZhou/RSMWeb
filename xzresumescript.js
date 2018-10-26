@@ -116,9 +116,27 @@ function swapCSSButtonClicked() {
 		else {
 			navHorizontalBar[0].style.boxShadow = "none";
 		}
+
+		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
+		modalMcpImage[0].src = "MCP-Logo-Wht.png";
+
+		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
+		modalHtml5Icon[0].src = "HTML5_black_bg.png";
+
+		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
+		modalCss3Icon[0].src = "CSS3_black_bg.png";
 	}
 	else if (cssStyleIndex == "1") {
 		navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
+
+		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
+		modalMcpImage[0].src = "MCP-Logo.png";
+
+		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
+		modalHtml5Icon[0].src = "HTML5.png";
+
+		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
+		modalCss3Icon[0].src = "CSS3.png";
 	}
 	navDropdownMouseout();
 }
