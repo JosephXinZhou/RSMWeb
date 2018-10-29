@@ -51,6 +51,7 @@ p.personal-info {
 	margin: 0 5px 0 16px;
 	display: inline-block;
 	font-size: 0.8em;
+	white-space: nowrap;
 }
 
 i.material-icons.md-18 {

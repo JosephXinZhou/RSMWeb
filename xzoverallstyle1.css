@@ -42,6 +42,7 @@ p.personal-info {
 	display: inline;
 	font-size: 0.8em;
 	line-height: 30px;
+	white-space: nowrap;
 }
 
 i.material-icons.md-18 {
