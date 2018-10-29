@@ -643,6 +643,16 @@ h2.modal-header {
 }
 
 @media (max-width: 560px) {
+	div.mcp-desc span.mcp-desc-subtext {
+		display: none;
+	}
+
+	div.comptia-desc span.comptia-desc-subtext {
+		display: none;
+	}
+}
+
+@media (max-width: 410px) {
 	div.mcp-desc span.mcp-desc-text {
 		display: none;
 	}

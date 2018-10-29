@@ -502,15 +502,25 @@ h2.modal-header {
 	}
 
 	div.job-content {
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 	}
 
 	div.edu-content {
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 	}
 
+	div.mcp-desc span.mcp-desc-subtext {
+		display: none;
+	}
+
+	div.comptia-desc span.comptia-desc-subtext {
+		display: none;
+	}
+}
+
+@media (max-width: 410px) {
 	div.mcp-desc span.mcp-desc-text {
 		display: none;
 	}
