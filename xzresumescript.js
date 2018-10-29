@@ -27,7 +27,7 @@ function showModalButtonClicked() {
 	modalWrapper[0].style.display = "block";
 	modals[Number(this.value)].style.display = "block";
 	mainPageWrapper[0].style.overflow = "hidden";
-	mainPageWrapper[0].style.height = "100%";
+	/*mainPageWrapper[0].style.height = "100%";*/
 	mainPageWrapper[0].style.position = "fixed";
 }
 
@@ -35,7 +35,7 @@ function closeModalElementClicked() {
 	modalWrapper[0].style.display = "none";
 	modals[Number(this.id.slice(-1))].style.display = "none";  
 	mainPageWrapper[0].style.overflow = "visible";
-	mainPageWrapper[0].style.height = "auto";
+	/*mainPageWrapper[0].style.height = "auto";*/
 	mainPageWrapper[0].style.position = "static";
 }
 
