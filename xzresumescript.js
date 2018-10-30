@@ -220,6 +220,7 @@ function windowOnScroll() {
 			navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
 		}
 	}*/
+	var cssStyleIndex = sessionStorage.getItem("cssIndex");
 	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
 		if (window.pageYOffset > 120) {
 			navHorizontalBar[0].style.boxShadow = "0 3px 6px 0px rgba(0, 0, 0, 0.3)";
