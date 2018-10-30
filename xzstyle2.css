@@ -510,10 +510,12 @@ h2.modal-header {
 	}
 
 	p.mcp-cer-date {
+		padding-left: 20px;
 		width: 100px;
 	}
 
 	p.comptia-cer-date {
+		padding-left: 20px;
 		width: 100px;
 	}
 
@@ -580,7 +582,7 @@ h2.modal-header {
 
 	button.styles-button {
 		width: 33.33%;
-		margin: 0 0 16px 0px;
+		margin: 0 0 16px 0;
 		text-align: center;
 		padding: 12px 20px;
 		float: left;

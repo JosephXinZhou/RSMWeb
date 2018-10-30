@@ -101,10 +101,6 @@ i.material-icons.md-18 {
 }
 
 @media (max-width: 248px) {
-	div.banner {
-		height: 140px;
-	}
-
 	p.personal-info-career {
 		display: none;
 	}

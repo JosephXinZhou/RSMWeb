@@ -384,12 +384,12 @@ h2.modal-header {
 		width: 218px;
 	}
 
-	button.styles-button {
+	button.styles-button, button.floating-contact-button {
 		width: 186px;
 	}
 
 	div.skl-expr-edu-cert {
-		margin: 0px 0px 0px 218px;
+		margin: 0 0 0 218px;
 	}
 
 	div.job-content {
@@ -423,10 +423,6 @@ h2.modal-header {
 	div.comptia-desc span.modal-comptia-desc-subtext {
 		display: inline;
 	}
-
-	button.floating-contact-button {
-		width: 186px;
-	}
 }
 
 @media (max-width: 752px) {
@@ -452,7 +448,7 @@ h2.modal-header {
 
 	button.styles-button {
 		width: 33.33%;
-		margin: 0 0 16px 0px;
+		margin: 0 0 16px 0;
 		text-align: center;
 		padding: 12px 20px;
 		float: left;
@@ -464,7 +460,7 @@ h2.modal-header {
 	}
 
 	div.skl-expr-edu-cert {
-		margin: 0px 0px 0px 0px;
+		margin: 0;
 		padding-left: 10px;
 		padding-right: 10px;
 		background-color: white;

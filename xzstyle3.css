@@ -556,4 +556,60 @@ h2.modal-header {
 	div.nav-horizontal-bar div.nav-dropdown {
 		display: inline-block;
 	}
+
+	div.styles {
+		margin: 0 3% 0 3%;
+	}
+
+	div.skl-expr-edu-cert {
+		margin: 0 3% 0 3%;
+	}
+
+	button.styles-button1 {
+		left: 21%;
+	}
+
+	button.styles-button3 {
+		left: 79%;
+	}
+
+	p.mcp-cer-date {
+		width: 100px;
+	}
+
+	p.comptia-cer-date {
+		width: 100px;
+	}
+
+	div.mcp-desc {
+		padding-left: 20px;
+	}
+
+	div.comptia-desc {
+		padding-left: 20px;
+	}
+
+	div.floating-contact-button-wrapper {
+		padding: 0 3% 40px 3%;
+	}
+}
+
+@media (max-width: 560px) {
+	div.mcp-desc span.mcp-desc-subtext {
+		display: none;
+	}
+
+	div.comptia-desc span.comptia-desc-subtext {
+		display: none;
+	}
+}
+
+@media (max-width: 410px) {
+	div.mcp-desc span.mcp-desc-text {
+		display: none;
+	}
+
+	div.comptia-desc span.comptia-desc-text {
+		display: none;
+	}
 }
