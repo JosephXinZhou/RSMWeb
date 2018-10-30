@@ -51,6 +51,11 @@ var applySubmitStyle = function () {
 	}
 };
 
+var pageLoaded = function () {
+	formSubmitButton[0].disabled = true;
+	applySubmitStyle();
+};
+
 window.onload = pageLoaded;
 
 applySubmitStyle();
