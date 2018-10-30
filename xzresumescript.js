@@ -14,7 +14,17 @@ var headElements = document.getElementsByTagName("head");
 
 window.onload = pageLoaded;
 function pageLoaded() {
-	sessionStorage.setItem("cssIndex", 0);
+	if (!sessionStorage.getItem("cssIndex")) {
+		sessionStorage.setItem("cssIndex", 0);
+	}
+	else {
+		var cssIndexNumber = Number(sessionStorage.getItem("cssIndex"));
+		if (cssIndexNumber != 0 && cssIndexNumber != 1 && cssIndexNumber != 2) {
+			sessionStorage.setItem("cssIndex", 0);
+		}
+
+		loadCSSAccordingToCssIndex();
+	}
 }
 
 for (var i = 0; i < 4; i++) {
@@ -98,12 +108,10 @@ for (var i = 0; i < 3; i++) {
 	stylesButtons[i].addEventListener('click', swapCSSButtonClicked);
 }
 
-function swapCSSButtonClicked() {
-	sessionStorage.setItem("cssIndex", Number(this.value));
-
+function loadCSSAccordingToCssIndex() {
 	var currentCssLinks = document.getElementsByTagName("link");
 
-	var cssFileNumber = Number(this.value) + 1;
+	var cssFileNumber = Number(sessionStorage.getItem("cssIndex")) + 1;
 	var newlink1FileName = "xzoverallstyle" + cssFileNumber + ".css";
 	var newLink1 = document.createElement("link");
 	newLink1.setAttribute("rel", "stylesheet");
@@ -162,6 +170,12 @@ function swapCSSButtonClicked() {
 	}
 
 	navDropdownMouseout();
+}
+
+function swapCSSButtonClicked() {
+	sessionStorage.setItem("cssIndex", Number(this.value));
+
+	loadCSSAccordingToCssIndex();
 }
 
 var floatingContactButton = document.getElementsByClassName("floating-contact-button");
