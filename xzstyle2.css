@@ -519,6 +519,14 @@ h2.modal-header {
 		width: 100px;
 	}
 
+	div.mcp-desc {
+		padding-left: 35px;
+	}
+
+	div.comptia-desc {
+		padding-left: 35px;
+	}
+
 	div.mcp-desc span.mcp-desc-subtext {
 		display: none;
 	}
