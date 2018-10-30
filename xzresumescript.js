@@ -44,15 +44,20 @@ navDropDown[0].addEventListener('mouseover', navDropdownMouseover);
 function navDropdownMouseover() {
 	navDropDownContent[0].style.display = "block";
 	var cssStyleIndex = sessionStorage.getItem("cssIndex");
-	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
-		navMenuButton[0].style.backgroundColor = "rgb(7, 7, 7)";
-		navMenuButton[0].style.color = "rgb(255, 255, 255)";
-		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
-	}
-	else if (cssStyleIndex == 1) {
+	if (cssStyleIndex == 1) {
 		navMenuButton[0].style.backgroundColor = "rgb(255, 255, 255)";
 		navMenuButton[0].style.color = "rgb(32, 112, 167)";
 		navMenuButton[0].style.textShadow = "3px 0 rgb(32, 112, 167), -3px 0 rgb(32, 112, 167)";
+	}
+	else if (cssStyleIndex == 2) {
+		navMenuButton[0].style.backgroundColor = "rgba(7, 7, 7, 0.92)";
+		navMenuButton[0].style.color = "white";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
+	}
+	else {
+		navMenuButton[0].style.backgroundColor = "rgb(7, 7, 7)";
+		navMenuButton[0].style.color = "rgb(255, 255, 255)";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
 	}
 }
 
@@ -61,15 +66,20 @@ navDropDown[0].addEventListener('mouseout', navDropdownMouseout);
 function navDropdownMouseout() {
 	navDropDownContent[0].style.display = "none";
 	var cssStyleIndex = sessionStorage.getItem("cssIndex");
-	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
-		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
-		navMenuButton[0].style.color = "rgb(255, 255, 255)";
-		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
-	}
-	else if (cssStyleIndex == 1) {
+	if (cssStyleIndex == 1) {
 		navMenuButton[0].style.backgroundColor = "rgb(255, 255, 255)";
 		navMenuButton[0].style.color = "rgb(37, 37, 37)";
 		navMenuButton[0].style.textShadow = "3px 0 black, -3px 0 black";
+	}
+	else if (cssStyleIndex == 2) {
+		navMenuButton[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+		navMenuButton[0].style.color = "white";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
+	}
+	else {
+		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+		navMenuButton[0].style.color = "rgb(255, 255, 255)";
+		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
 	}
 }
 
@@ -109,7 +119,31 @@ function swapCSSButtonClicked() {
 	headElements[0].replaceChild(newLink2, currentCssLinks[1]);
 
 	var cssStyleIndex = sessionStorage.getItem("cssIndex");
-	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
+	if (cssStyleIndex == "1") {
+		navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
+
+		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
+		modalMcpImage[0].src = "MCP-Logo.png";
+
+		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
+		modalHtml5Icon[0].src = "HTML5.png";
+
+		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
+		modalCss3Icon[0].src = "CSS3.png";
+	}
+	else if (cssStyleIndex == "2") {
+		navHorizontalBar[0].style.boxShadow = "none";
+
+		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
+		modalMcpImage[0].src = "MCP-Logo.png";
+
+		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
+		modalHtml5Icon[0].src = "HTML5.png";
+
+		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
+		modalCss3Icon[0].src = "CSS3.png";
+	}
+	else {
 		if (window.pageYOffset > 120) {
 			navHorizontalBar[0].style.boxShadow = "0 3px 6px 0px rgba(0, 0, 0, 0.3)";
 		}
@@ -126,18 +160,7 @@ function swapCSSButtonClicked() {
 		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
 		modalCss3Icon[0].src = "CSS3_black_bg.png";
 	}
-	else if (cssStyleIndex == "1") {
-		navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
 
-		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
-		modalMcpImage[0].src = "MCP-Logo.png";
-
-		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
-		modalHtml5Icon[0].src = "HTML5.png";
-
-		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
-		modalCss3Icon[0].src = "CSS3.png";
-	}
 	navDropdownMouseout();
 }
 
@@ -178,20 +201,8 @@ function go() {
 window.onscroll = function() { windowOnScroll()};
 
 function windowOnScroll() {
-	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+	navDropdownMouseout();
 
-	navDropDownContent[0].style.display = "none";
-	if (cssStyleIndex != 1 && cssStyleIndex!= 2) {
-		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
-		navMenuButton[0].style.color = "rgb(255, 255, 255)";
-		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
-	}
-	else if (cssStyleIndex == 1)
-	{
-		navMenuButton[0].style.backgroundColor = "rgb(255, 255, 255)";
-		navMenuButton[0].style.color = "rgb(37, 37, 37)";
-		navMenuButton[0].style.textShadow = "3px 0 black, -3px 0 black";
-	}
 	/*var cssFile1Url = currentCssLinks[0].href;
 	var currentStyleArr = cssFile1Url.match(/xzoverallstyle[0-9]\.css/g);
 	if (currentStyleArr) {

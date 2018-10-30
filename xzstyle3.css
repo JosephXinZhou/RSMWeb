@@ -30,7 +30,7 @@ div.nav-horizontal-bar button.nav-button:last-child {
 }
 
 div.nav-horizontal-bar button.nav-button:hover {
-	background-color: rgb(7, 7, 7);
+	background-color: rgba(7, 7, 7, 0.92);
 }
 
 div.nav-horizontal-bar div.nav-dropdown {
@@ -40,7 +40,7 @@ div.nav-horizontal-bar div.nav-dropdown {
 }
 
 div.nav-horizontal-bar div.nav-dropdown button.menu-button {
-	background-color: rgba(67, 67, 67, 0.92);
+	background-color: rgba(0, 0, 0, 0);
 	border: none;
 	color: white;
 	margin: 0;
@@ -55,7 +55,7 @@ div.nav-horizontal-bar div.nav-dropdown button.menu-button {
 }
 
 div.nav-horizontal-bar div.nav-dropdown button.menu-button:hover {
-	background-color: rgb(7, 7, 7);
+	background-color: rgba(7, 7, 7, 0.92);
 }
 
 div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content {
@@ -87,7 +87,7 @@ div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown
 }
 
 div.nav-horizontal-bar div.nav-dropdown div.nav-dropdown-content button.dropdown-button:hover {
-	background-color: rgb(7, 7, 7);
+	background-color: rgba(7, 7, 7, 0.92);
 }
 
 div.nav-horizontal-bar div.nav-dropdown:hover div.nav-dropdown-content {
