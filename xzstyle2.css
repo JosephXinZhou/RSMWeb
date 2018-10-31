@@ -154,10 +154,6 @@ button.styles-button {
 	width: 100%;
 }
 
-button.styles-button:focus {
-	outline: 0;
-}
-
 button.styles-button:hover {
 	color: white;
 	background-color: rgb(48, 132, 227);

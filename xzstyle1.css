@@ -138,10 +138,6 @@ button.styles-button {
 	width: 226px;
 }
 
-button.styles-button:focus {
-	outline: 0;
-}
-
 button.styles-button:hover {
 	background-color: rgb(107, 107, 81);
 }

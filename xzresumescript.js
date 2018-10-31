@@ -34,6 +34,8 @@ for (var i = 0; i < 4; i++) {
 }
 
 function showModalButtonClicked() {
+	this.blur();
+
 	modalWrapper[0].style.display = "block";
 	modals[Number(this.value)].style.display = "block";
 	mainPageWrapper[0].style.overflow = "hidden";
@@ -42,6 +44,8 @@ function showModalButtonClicked() {
 }
 
 function closeModalElementClicked() {
+	this.blur();
+
 	modalWrapper[0].style.display = "none";
 	modals[Number(this.id.slice(-1))].style.display = "none";  
 	mainPageWrapper[0].style.overflow = "visible";
@@ -96,6 +100,8 @@ function navDropdownMouseout() {
 navMenuButton[0].addEventListener('click', navMenuButtonClicked);
 
 function navMenuButtonClicked() {
+	this.blur();
+
 	if (navDropDownContent[0].style.display == "none") {
 		navDropdownMouseover();
 	}
@@ -173,6 +179,8 @@ function loadCSSAccordingToCssIndex() {
 }
 
 function swapCSSButtonClicked() {
+	this.blur();
+
 	sessionStorage.setItem("cssIndex", Number(this.value));
 
 	loadCSSAccordingToCssIndex();
@@ -212,7 +220,7 @@ function go() {
 }
 
 /*var currentCssLinks = document.getElementsByTagName("link");*/
-window.onscroll = function() { windowOnScroll()};
+window.onscroll = function() { windowOnScroll(); };
 
 function windowOnScroll() {
 	navDropdownMouseout();

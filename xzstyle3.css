@@ -134,10 +134,6 @@ button.styles-button {
 	border-radius: 50%;
 }
 
-button.styles-button:focus {
-	outline: 0;
-}
-
 button.styles-button:hover {
 	background-color: rgb(250, 102, 50);
 	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.36), 0 0 20px 0 rgba(0, 0, 0, 0.2);
