@@ -254,3 +254,12 @@ function windowOnScroll() {
 
 	go();
 }
+
+contactButton[0].addEventListener('click', contactButtonClicked);
+function contactButtonClicked() {
+	this.blur();
+
+	location.href = "xzformhandler.php";
+}
+
+floatingContactButton[0].addEventListener('click', contactButtonClicked);
