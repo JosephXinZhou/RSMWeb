@@ -454,7 +454,7 @@ div.modal {
 	display: none;
 	position: fixed;
 	z-index: 3;
-	padding: 70px 18px 25px 18px;
+	padding: 70px 24px 25px 18px;
 	left: 16px;
 	top: 16px;
 	right: 16px;
@@ -472,7 +472,7 @@ span.close {
 	padding: 0px 0px 0px 0px;
 	border-radius: 50%;
 	top: 16px;
-	right: 28px;
+	right: 32px;
 	text-align: center;
 	color: rgb(250, 102, 50);
 	font-size: 40px;
