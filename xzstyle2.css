@@ -588,8 +588,9 @@ h2.modal-header {
 		width: 33.33%;
 		margin: 0 0 16px 0;
 		text-align: center;
-		padding: 12px 20px;
+		padding: 12px 0;
 		float: left;
+		white-space: nowrap;
 	}
 
 	button.styles-button:last-child {
