@@ -194,21 +194,26 @@ function go() {
 	var stylesDivRect = stylesDiv[0].getBoundingClientRect();
 	var floatingContactButtonRect = floatingContactButton[0].getBoundingClientRect();
 	var stylesDivRectBottom;
+	stylesDivRectBottom = stylesDivRect.bottom;
+	/*
 	if (stylesDivRect.height > 0) {
 		stylesDivRectBottom = stylesDivRect.y + stylesDivRect.height;
 	}
 	else {
 		stylesDivRectBottom = stylesDivRect.y;
 	}
+	*/
 	var floatingContactButtonRectTop;
+	floatingContactButtonRectTop = floatingContactButtonRect.top;
 	var floatingContactButtonAbsHeight = Math.abs(floatingContactButtonRect.height);
+	/*
 	if (floatingContactButtonRect.height > 0) {
 		floatingContactButtonRectTop = floatingContactButtonRect.y;
 	}
 	else {
 		floatingContactButtonRectTop = floatingContactButtonRect.y + floatingContactButtonRect.height;
 	}
-
+	*/
 	if (stylesDivRectBottom + 16 > floatingContactButtonRectTop) {
 		var bottomValue = -floatingContactButtonAbsHeight;
 		floatingContactButton[0].style.bottom = bottomValue + "px";
