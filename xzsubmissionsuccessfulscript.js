@@ -1,6 +1,11 @@
 var homeButton = document.getElementsByClassName("home-button");
 
-homeButton[0].addEventListener('click', homeButtonClicked);
+if (homeButton[0].addEventListener) {
+	homeButton[0].addEventListener('click', homeButtonClicked);
+}
+else {
+	homeButton[0].attachEvent('onclick', homeButtonClicked);
+}
 function homeButtonClicked() {
 	location.href = "xzresume.html";
 }
@@ -8,7 +13,12 @@ function homeButtonClicked() {
 var feedBackContentDiv = document.getElementsByClassName("feedback-content");
 
 go();
-window.addEventListener('resize', go);
+if (window.addEventListener) {
+	window.addEventListener('resize', go);
+}
+else {
+	window.attachEvent('onresize', go);
+}
 function go() {
 	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 

@@ -1,7 +1,13 @@
 var contactContent = document.getElementsByClassName("contact-content");
 
 go();
-window.addEventListener('resize', go);
+
+if (window.addEventListener) {
+	window.addEventListener('resize', go);
+}
+else {
+	window.attachEvent('onresize', go);
+}
 function go() {
 	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	if (w > 520.0) {
@@ -15,7 +21,12 @@ var homeButton = document.getElementsByClassName("home-button");
 var formSubmitButton = document.getElementsByClassName("form-submit");
 var messageMeDiv = document.getElementsByClassName("message-me");
 
-homeButton[0].addEventListener('click', homeButtonClicked);
+if (homeButton[0].addEventListener) {
+	homeButton[0].addEventListener('click', homeButtonClicked);
+}
+else {
+	homeButton[0].attachEvent('onclick', homeButtonClicked);
+}
 function homeButtonClicked() {
 	location.href = "xzresume.html";
 }

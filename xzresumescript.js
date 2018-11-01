@@ -11,6 +11,13 @@ var navHorizontalBar = document.getElementsByClassName("nav-horizontal-bar");
 var contactButton = document.getElementsByClassName("contact-button");
 var stylesButtons = document.getElementsByClassName("styles-button");
 var headElements = document.getElementsByTagName("head");
+var addEventListenerValid = true;
+
+if (lwButtons[0].addEventListener) {
+}
+else {
+	addEventListenerValid = false;
+}
 
 window.onload = pageLoaded;
 function pageLoaded() {
@@ -28,9 +35,16 @@ function pageLoaded() {
 }
 
 for (var i = 0; i < 4; i++) {
-	lwButtons[i].addEventListener('click', showModalButtonClicked);
-	dropdownButtons[i].addEventListener('click', showModalButtonClicked);
-	spans[i].addEventListener('click', closeModalElementClicked);
+	if (addEventListenerValid) {
+		lwButtons[i].addEventListener('click', showModalButtonClicked);
+		dropdownButtons[i].addEventListener('click', showModalButtonClicked);
+		spans[i].addEventListener('click', closeModalElementClicked);
+	}
+	else {
+		lwButtons[i].attachEvent('onclick', showModalButtonClicked);
+		dropdownButtons[i].attachEvent('onclick', showModalButtonClicked);
+		spans[i].attachEvent('onclick', closeModalElementClicked);
+	}
 }
 
 function showModalButtonClicked() {
@@ -53,8 +67,12 @@ function closeModalElementClicked() {
 	mainPageWrapper[0].style.position = "static";
 }
 
-navDropDown[0].addEventListener('mouseover', navDropdownMouseover);
-
+if (addEventListenerValid) {
+	navDropDown[0].addEventListener('mouseover', navDropdownMouseover);
+}
+else {
+	navDropDown[0].attachEvent('onmouseover', navDropdownMouseover);
+}
 function navDropdownMouseover() {
 	navDropDownContent[0].style.display = "block";
 	var cssStyleIndex = sessionStorage.getItem("cssIndex");
@@ -75,8 +93,12 @@ function navDropdownMouseover() {
 	}
 }
 
-navDropDown[0].addEventListener('mouseout', navDropdownMouseout);
-
+if (addEventListenerValid) {
+	navDropDown[0].addEventListener('mouseout', navDropdownMouseout);
+}
+else {
+	navDropDown[0].attachEvent('onmouseout', navDropdownMouseout);
+}
 function navDropdownMouseout() {
 	navDropDownContent[0].style.display = "none";
 	var cssStyleIndex = sessionStorage.getItem("cssIndex");
@@ -97,8 +119,12 @@ function navDropdownMouseout() {
 	}
 }
 
-navMenuButton[0].addEventListener('click', navMenuButtonClicked);
-
+if (addEventListenerValid) {
+	navMenuButton[0].addEventListener('click', navMenuButtonClicked);
+}
+else {
+	navMenuButton[0].attachEvent('onclick', navMenuButtonClicked);
+}
 function navMenuButtonClicked() {
 	this.blur();
 
@@ -111,7 +137,12 @@ function navMenuButtonClicked() {
 }
 
 for (var i = 0; i < 3; i++) {
-	stylesButtons[i].addEventListener('click', swapCSSButtonClicked);
+	if (addEventListenerValid) {
+		stylesButtons[i].addEventListener('click', swapCSSButtonClicked);
+	}
+	else {
+		stylesButtons[i].attachEvent('onclick', swapCSSButtonClicked);
+	}
 }
 
 function loadCSSAccordingToCssIndex() {
@@ -189,7 +220,12 @@ function swapCSSButtonClicked() {
 var floatingContactButton = document.getElementsByClassName("floating-contact-button");
 var stylesDiv = document.getElementsByClassName("styles");
 go();
-window.addEventListener('resize', go);
+if (addEventListenerValid) {
+	window.addEventListener('resize', go);
+}
+else {
+	window.attachEvent('onresize', go);
+}
 function go() {
 	var stylesDivRect = stylesDiv[0].getBoundingClientRect();
 	var floatingContactButtonRect = floatingContactButton[0].getBoundingClientRect();
@@ -260,11 +296,21 @@ function windowOnScroll() {
 	go();
 }
 
-contactButton[0].addEventListener('click', contactButtonClicked);
+if (addEventListenerValid) {
+	contactButton[0].addEventListener('click', contactButtonClicked);
+}
+else {
+	contactButton[0].attachEvent('onclick', contactButtonClicked);
+}
 function contactButtonClicked() {
 	this.blur();
 
 	location.href = "xzformhandler.php";
 }
 
-floatingContactButton[0].addEventListener('click', contactButtonClicked);
+if (addEventListenerValid) {
+	floatingContactButton[0].addEventListener('click', contactButtonClicked);
+}
+else {
+	floatingContactButton[0].attachEvent('onclick', contactButtonClicked);
+}
