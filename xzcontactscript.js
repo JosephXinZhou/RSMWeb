@@ -1,4 +1,10 @@
-var contactContent = document.getElementsByClassName("contact-content");
+var contactContent;
+if (document.getElementsByClassName) {
+	contactContent = document.getElementsByClassName("contact-content");
+}
+else {
+	contactContent = document.querySelectorAll(".contact-content");
+}
 
 go();
 
@@ -17,9 +23,17 @@ function go() {
 	}
 }
 
-var homeButton = document.getElementsByClassName("home-button");
-var formSubmitButton = document.getElementsByClassName("form-submit");
-var messageMeDiv = document.getElementsByClassName("message-me");
+var homeButton, formSubmitButton, messageMeDiv;
+if (document.getElementsByClassName) {
+	homeButton = document.getElementsByClassName("home-button");
+	formSubmitButton = document.getElementsByClassName("form-submit");
+	messageMeDiv = document.getElementsByClassName("message-me");
+}
+else {
+	homeButton = document.querySelectorAll(".home-button");
+	formSubmitButton = document.querySelectorAll(".form-submit");
+	messageMeDiv = document.querySelectorAll(".message-me");
+}
 
 if (homeButton[0].addEventListener) {
 	homeButton[0].addEventListener('click', homeButtonClicked);
@@ -72,8 +86,13 @@ window.onload = pageLoaded;
 applySubmitStyle();
 
 var messageBody = document.getElementById("message-body");
-var messageBodyLength = document.getElementsByClassName("message-body-length");
-
+var messageBodyLength;
+if (document.getElementsByClassName) {
+	messageBodyLength = document.getElementsByClassName("message-body-length");
+}
+else {
+	messageBodyLength = document.querySelectorAll(".message-body-length");
+}
 if (messageBody.addEventListener) {
 	messageBody.addEventListener('input', handleMessageBodyLengthIndication, false);
 }

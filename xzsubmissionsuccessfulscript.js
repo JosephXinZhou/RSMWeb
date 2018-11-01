@@ -1,4 +1,10 @@
-var homeButton = document.getElementsByClassName("home-button");
+var homeButton;
+if (document.getElementsByClassName) {
+	homeButton = document.getElementsByClassName("home-button");
+}
+else {
+	homeButton = document.querySelectorAll(".home-button");
+}
 
 if (homeButton[0].addEventListener) {
 	homeButton[0].addEventListener('click', homeButtonClicked);
@@ -10,8 +16,13 @@ function homeButtonClicked() {
 	location.href = "xzresume.html";
 }
 
-var feedBackContentDiv = document.getElementsByClassName("feedback-content");
-
+var feedBackContentDiv;
+if (document.getElementsByClassName) {
+	feedBackContentDiv = document.getElementsByClassName("feedback-content");
+}
+else {
+	feedBackContentDiv = document.querySelectorAll(".feedback-content");
+}
 go();
 if (window.addEventListener) {
 	window.addEventListener('resize', go);

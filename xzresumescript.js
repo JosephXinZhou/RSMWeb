@@ -1,15 +1,33 @@
-var lwButtons = document.getElementsByClassName('lw-button');
-var dropdownButtons = document.getElementsByClassName('dropdown-button');
-var modalWrapper = document.getElementsByClassName("modal-wrapper");
-var modals = document.getElementsByClassName("modal");
-var spans = document.getElementsByClassName("close");
-var mainPageWrapper = document.getElementsByClassName("page-wrapper");
-var navDropDown = document.getElementsByClassName("nav-dropdown");
-var navDropDownContent = document.getElementsByClassName("nav-dropdown-content");
-var navMenuButton = document.getElementsByClassName("menu-button");
-var navHorizontalBar = document.getElementsByClassName("nav-horizontal-bar");
-var contactButton = document.getElementsByClassName("contact-button");
-var stylesButtons = document.getElementsByClassName("styles-button");
+var lwButtons, dropdownButtons, modalWrapper, modals, spans, mainPageWrapper, navDropDown, navDropDownContent, navMenuButton, navHorizontalBar, contactButton, stylesButtons;
+if (document.getElementsByClassName) {
+	lwButtons = document.getElementsByClassName('lw-button');
+	dropdownButtons = document.getElementsByClassName('dropdown-button');
+	modalWrapper = document.getElementsByClassName("modal-wrapper");
+	modals = document.getElementsByClassName("modal");
+	spans = document.getElementsByClassName("close");
+	mainPageWrapper = document.getElementsByClassName("page-wrapper");
+	navDropDown = document.getElementsByClassName("nav-dropdown");
+	navDropDownContent = document.getElementsByClassName("nav-dropdown-content");
+	navMenuButton = document.getElementsByClassName("menu-button");
+	navHorizontalBar = document.getElementsByClassName("nav-horizontal-bar");
+	contactButton = document.getElementsByClassName("contact-button");
+	stylesButtons = document.getElementsByClassName("styles-button");
+}
+else {
+	lwButtons = document.querySelectorAll('.lw-button');
+	dropdownButtons = document.querySelectorAll('.dropdown-button');
+	modalWrapper = document.querySelectorAll(".modal-wrapper");
+	modals = document.querySelectorAll(".modal");
+	spans = document.querySelectorAll(".close");
+	mainPageWrapper = document.querySelectorAll(".page-wrapper");
+	navDropDown = document.querySelectorAll(".nav-dropdown");
+	navDropDownContent = document.querySelectorAll(".nav-dropdown-content");
+	navMenuButton = document.querySelectorAll(".menu-button");
+	navHorizontalBar = document.querySelectorAll(".nav-horizontal-bar");
+	contactButton = document.querySelectorAll(".contact-button");
+	stylesButtons = document.querySelectorAll(".styles-button");
+}
+
 var headElements = document.getElementsByTagName("head");
 var addEventListenerValid = true;
 
@@ -164,28 +182,29 @@ function loadCSSAccordingToCssIndex() {
 	headElements[0].replaceChild(newLink2, currentCssLinks[1]);
 
 	var cssStyleIndex = sessionStorage.getItem("cssIndex");
+	var modalMcpImage, modalHtml5Icon, modalCss3Icon;
+	if (document.getElementsByClassName) {
+		modalMcpImage = document.getElementsByClassName("modal-mcp-img");
+		modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
+		modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
+	}
+	else {
+		modalMcpImage = document.querySelectorAll(".modal-mcp-img");
+		modalHtml5Icon = document.querySelectorAll(".modal-html5-icon");
+		modalCss3Icon = document.querySelectorAll(".modal-css3-icon");
+	}
 	if (cssStyleIndex == "1") {
 		navHorizontalBar[0].style.boxShadow = "0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15)";
 
-		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
 		modalMcpImage[0].src = "MCP-Logo.png";
-
-		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
 		modalHtml5Icon[0].src = "HTML5.png";
-
-		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
 		modalCss3Icon[0].src = "CSS3.png";
 	}
 	else if (cssStyleIndex == "2") {
 		navHorizontalBar[0].style.boxShadow = "none";
 
-		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
 		modalMcpImage[0].src = "MCP-Logo.png";
-
-		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
 		modalHtml5Icon[0].src = "HTML5.png";
-
-		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
 		modalCss3Icon[0].src = "CSS3.png";
 	}
 	else {
@@ -196,13 +215,8 @@ function loadCSSAccordingToCssIndex() {
 			navHorizontalBar[0].style.boxShadow = "none";
 		}
 
-		var modalMcpImage = document.getElementsByClassName("modal-mcp-img");
 		modalMcpImage[0].src = "MCP-Logo-Wht.png";
-
-		var modalHtml5Icon = document.getElementsByClassName("modal-html5-icon");
 		modalHtml5Icon[0].src = "HTML5_black_bg.png";
-
-		var modalCss3Icon = document.getElementsByClassName("modal-css3-icon");
 		modalCss3Icon[0].src = "CSS3_black_bg.png";
 	}
 
@@ -217,8 +231,15 @@ function swapCSSButtonClicked() {
 	loadCSSAccordingToCssIndex();
 }
 
-var floatingContactButton = document.getElementsByClassName("floating-contact-button");
-var stylesDiv = document.getElementsByClassName("styles");
+var floatingContactButton, stylesDiv;
+if (document.getElementsByClassName) {
+	floatingContactButton = document.getElementsByClassName("floating-contact-button");
+	stylesDiv = document.getElementsByClassName("styles");
+}
+else {
+	floatingContactButton = document.querySelectorAll(".floating-contact-button");
+	stylesDiv = document.querySelectorAll(".styles");
+}
 go();
 if (addEventListenerValid) {
 	window.addEventListener('resize', go);
