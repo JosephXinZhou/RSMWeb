@@ -325,6 +325,11 @@ function go() {
 	var floatingContactButtonRectTop;
 	floatingContactButtonRectTop = floatingContactButtonRect.top;
 	var floatingContactButtonAbsHeight = Math.abs(floatingContactButtonRect.height);
+	if (floatingContactButtonAbsHeight) {
+	}
+	else {
+		floatingContactButtonAbsHeight = 45;
+	}
 	/*
 	if (floatingContactButtonRect.height > 0) {
 		floatingContactButtonRectTop = floatingContactButtonRect.y;
