@@ -54,35 +54,85 @@ function pageLoaded() {
 
 for (var i = 0; i < 4; i++) {
 	if (addEventListenerValid) {
-		lwButtons[i].addEventListener('click', showModalButtonClicked);
-		dropdownButtons[i].addEventListener('click', showModalButtonClicked);
-		spans[i].addEventListener('click', closeModalElementClicked);
+		lwButtons[i].addEventListener('click', function(evt){showModalButtonClicked(evt, this);});
+		dropdownButtons[i].addEventListener('click', function(evt){showModalButtonClicked(evt, this);});
+		spans[i].addEventListener('click', function(evt){closeModalElementClicked(evt, this);});
 	}
 	else {
-		lwButtons[i].attachEvent('onclick', showModalButtonClicked);
-		dropdownButtons[i].attachEvent('onclick', showModalButtonClicked);
-		spans[i].attachEvent('onclick', closeModalElementClicked);
+		lwButtons[i].attachEvent('onclick', function(evt){showModalButtonClicked(evt, this);});
+		dropdownButtons[i].attachEvent('onclick', function(evt){showModalButtonClicked(evt, this);});
+		spans[i].attachEvent('onclick', function(evt){closeModalElementClicked(evt, this);});
 	}
 }
 
-function showModalButtonClicked() {
-	this.blur();
+function retrieveEventTargetFromEvent(evt) {
+		var e;
+		if (evt) {
+			e = evt;
+		}
+		else {
+			e = window.event;
+		}
 
-	modalWrapper[0].style.display = "block";
-	modals[Number(this.value)].style.display = "block";
-	mainPageWrapper[0].style.overflow = "hidden";
-	/*mainPageWrapper[0].style.height = "100%";*/
-	mainPageWrapper[0].style.position = "fixed";
+		var targ;
+		if (e.currentTarget) {
+			targ = e.currentTarget;
+		}
+		else if (e.target) {
+			targ = e.target;
+		}
+		else if (e.srcElement) {
+			targ = e.srcElement;
+		}
+
+		if (targ.nodeType == 3) {
+			targ = targ.parentNode;
+		}
+
+		return targ;
 }
 
-function closeModalElementClicked() {
-	this.blur();
+function showModalButtonClicked(evt, targetThis) {
+	if (targetThis.value) {
+		targetThis.blur();
 
-	modalWrapper[0].style.display = "none";
-	modals[Number(this.id.slice(-1))].style.display = "none";  
-	mainPageWrapper[0].style.overflow = "visible";
-	/*mainPageWrapper[0].style.height = "auto";*/
-	mainPageWrapper[0].style.position = "static";
+		modalWrapper[0].style.display = "block";
+		modals[Number(targetThis.value)].style.display = "block";
+		mainPageWrapper[0].style.overflow = "hidden";
+		/*mainPageWrapper[0].style.height = "100%";*/
+		mainPageWrapper[0].style.position = "fixed";
+	}
+	else {
+		var targ = retrieveEventTargetFromEvent(evt);
+
+		modalWrapper[0].style.display = "block";
+		modals[Number(targ.getAttribute("value"))].style.display = "block";
+		mainPageWrapper[0].style.overflow = "hidden";
+		/*mainPageWrapper[0].style.height = "100%";*/
+		mainPageWrapper[0].style.position = "fixed";
+	}
+}
+
+function closeModalElementClicked(evt, targetThis) {
+	if (targetThis.id && targetThis.id.indexOf("close") != -1) {
+		targetThis.blur();
+
+		modalWrapper[0].style.display = "none";
+		modals[Number(targetThis.id.slice(-1))].style.display = "none";
+		mainPageWrapper[0].style.overflow = "visible";
+		/*mainPageWrapper[0].style.height = "auto";*/
+		mainPageWrapper[0].style.position = "static";
+	}
+	else {
+		var targ = retrieveEventTargetFromEvent(evt);
+
+		modalWrapper[0].style.display = "none";
+		modals[Number(targ.getAttribute("id").slice(-1))].style.display = "none";
+
+		mainPageWrapper[0].style.overflow = "visible";
+		/*mainPageWrapper[0].style.height = "auto";*/
+		mainPageWrapper[0].style.position = "static";
+	}
 }
 
 if (addEventListenerValid) {
@@ -143,6 +193,7 @@ if (addEventListenerValid) {
 else {
 	navMenuButton[0].attachEvent('onclick', navMenuButtonClicked);
 }
+
 function navMenuButtonClicked() {
 	this.blur();
 
@@ -156,10 +207,10 @@ function navMenuButtonClicked() {
 
 for (var i = 0; i < 3; i++) {
 	if (addEventListenerValid) {
-		stylesButtons[i].addEventListener('click', swapCSSButtonClicked);
+		stylesButtons[i].addEventListener('click', function(evt){swapCSSButtonClicked(evt, this);});
 	}
 	else {
-		stylesButtons[i].attachEvent('onclick', swapCSSButtonClicked);
+		stylesButtons[i].attachEvent('onclick', function(evt){swapCSSButtonClicked(evt, this);});
 	}
 }
 
@@ -223,12 +274,21 @@ function loadCSSAccordingToCssIndex() {
 	navDropdownMouseout();
 }
 
-function swapCSSButtonClicked() {
-	this.blur();
+function swapCSSButtonClicked(evt, targetThis) {
+	if (targetThis.value) {
+		targetThis.blur();
 
-	sessionStorage.setItem("cssIndex", Number(this.value));
+		sessionStorage.setItem("cssIndex", Number(targetThis.value));
 
-	loadCSSAccordingToCssIndex();
+		loadCSSAccordingToCssIndex();
+	}
+	else {
+		var targ = retrieveEventTargetFromEvent(evt);
+
+		sessionStorage.setItem("cssIndex", Number(targ.getAttribute("value")));
+
+		loadCSSAccordingToCssIndex();
+	}
 }
 
 var floatingContactButton, stylesDiv;
