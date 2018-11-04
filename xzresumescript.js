@@ -150,6 +150,7 @@ function navDropdownMouseover() {
 		navMenuButton[0].style.textShadow = "3px 0 rgb(32, 112, 167), -3px 0 rgb(32, 112, 167)";
 	}
 	else if (cssStyleIndex == 2) {
+		navMenuButton[0].style.backgroundColor = "rgb(7, 7, 7)";
 		navMenuButton[0].style.backgroundColor = "rgba(7, 7, 7, 0.92)";
 		navMenuButton[0].style.color = "white";
 		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
@@ -176,7 +177,8 @@ function navDropdownMouseout() {
 		navMenuButton[0].style.textShadow = "3px 0 black, -3px 0 black";
 	}
 	else if (cssStyleIndex == 2) {
-		navMenuButton[0].style.backgroundColor = "rgba(0, 0, 0, 0)";
+		navMenuButton[0].style.backgroundColor = "rgb(67, 67, 67)";
+		navMenuButton[0].style.backgroundColor = "rgba(67, 67, 67, 0)";
 		navMenuButton[0].style.color = "white";
 		navMenuButton[0].style.textShadow = "3px 0 white, -3px 0 white";
 	}
