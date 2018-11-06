@@ -12,8 +12,8 @@ html, body {
 
 body {
 	font-family: Arial, 'Roboto', 'Open Sans', Calibri, sans-serif;
-	font-size: 1.15em;
-	font-weight: 100;
+	font-size: 1.08em;
+	font-weight: normal;
 	color: rgb(37, 37, 37);
 }
 
@@ -41,7 +41,7 @@ h1 {
 	padding: 16px 0 16px 0;
 	width: 180px;
 	font-family: 'Montserrat', 'Segoe UI', sans-serif;
-	font-size: 2.1em;
+	font-size: 2.25em;
 	font-weight: 100;
 	border-bottom: 1px solid rgb(207, 207, 207);
 	border-top: 1px solid rgb(207, 207, 207);
@@ -50,7 +50,7 @@ h1 {
 p.personal-info {
 	margin: 0 5px 0 16px;
 	display: inline-block;
-	font-size: 0.8em;
+	font-size: 0.85em;
 	white-space: nowrap;
 }
 
