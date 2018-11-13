@@ -21,6 +21,10 @@ function go() {
 		contactContent[0].style.paddingLeft = paddingPercentage + '%';
 		contactContent[0].style.paddingRight = paddingPercentage + '%';
 	}
+	else {
+		contactContent[0].style.paddingLeft = 0;
+		contactContent[0].style.paddingRight = 0;
+	}
 }
 
 var homeButton, formSubmitButton, messageMeDiv;
