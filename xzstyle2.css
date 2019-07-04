@@ -670,7 +670,7 @@ h2.modal-header {
 	}
 }
 
-@media (max-width: 560px) {
+@media (max-width: 580px) {
 	div.mcp-desc span.mcp-desc-subtext {
 		display: none;
 	}
@@ -680,12 +680,22 @@ h2.modal-header {
 	}
 }
 
-@media (max-width: 410px) {
+@media (max-width: 440px) {
 	div.mcp-desc span.mcp-desc-text {
 		display: none;
 	}
 
 	div.comptia-desc span.comptia-desc-text {
+		display: none;
+	}
+}
+
+@media (max-width: 300px) {
+	p.comptia-cer-date {
+		display: none;
+	}
+
+	p.mcp-cer-date {
 		display: none;
 	}
 }
