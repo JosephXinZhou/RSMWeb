@@ -572,28 +572,25 @@ h2.modal-header {
 		width: auto;
 		margin: 10px 10px 0 10px;
 		overflow: hidden;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
 		float: none;
 		clear: none;
 	}
 
 	h2.styles-header {
 		margin-left: 0;
-		padding-left: 0;
+		padding-left: 10px;
 		border-bottom: 1px solid rgb(221, 221, 221);
 	}
 
 	button.styles-button {
 		width: 33.33%;
-		margin: 0 0 16px 0;
+		margin: 0 0 0 0;
 		text-align: center;
 		padding: 12px 20px;
 		float: left;
-	}
-
-	button.styles-button:last-child {
-		border-bottom: 1px solid rgb(221, 221, 221);
+		border-bottom: none;
 	}
 
 	div.resume-content {
@@ -602,10 +599,35 @@ h2.modal-header {
 
 	div.skl-expr-edu-cert {
 		margin: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
 		background-color: white;
 		position: static;
+	}
+
+	h2 {
+		padding-left: 10px;
+	}
+
+	div.skills-icons {
+    		padding: 0 0 0 10px;
+	}
+
+	ul.skills-detail {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	
+	div.mobile-developer {
+		padding-right: 10px;
+	}
+
+	div.website-admin {
+		padding-right: 10px;
+	}
+	
+	div.fanshawe {
+		padding-right: 10px;
 	}
 
 	div.mcp-desc span.mcp-desc-subtext {

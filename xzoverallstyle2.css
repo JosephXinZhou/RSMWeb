@@ -88,9 +88,21 @@ i.material-icons.md-18 {
 
 @media (max-width: 410px) {
 	div.banner {
-		height: 226px;
+		height: 132px;
 	}
 
+	p.personal-info-email {
+		display: none;
+	}
+
+	p.personal-info-location {
+		display: none;
+	}
+
+	p.personal-info-phone {
+		display: none;
+	}
+/*
 	p.personal-info-location {
 		clear: left;
 	}
@@ -98,6 +110,7 @@ i.material-icons.md-18 {
 	p.personal-info-phone {
 		clear: left;
 	}
+*/
 }
 
 @media (max-width: 248px) {
