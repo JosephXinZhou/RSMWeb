@@ -1,4 +1,5 @@
 var lwButtons, dropdownButtons, modalWrapper, modals, spans, mainPageWrapper, navDropDown, navDropDownContent, navMenuButton, navHorizontalBar, contactButton, stylesButtons;
+//Check if getElementsByClassName method is available to make JS compatible with earlier version of browser such as IE8
 if (document.getElementsByClassName) {
 	lwButtons = document.getElementsByClassName('lw-button');
 	dropdownButtons = document.getElementsByClassName('dropdown-button');
@@ -30,7 +31,7 @@ else {
 
 var headElements = document.getElementsByTagName("head");
 var addEventListenerValid = true;
-
+//Check if addEventListener method is available to make JS compatible with earlier version of browser such as IE8
 if (lwButtons[0].addEventListener) {
 }
 else {
@@ -40,12 +41,12 @@ else {
 window.onload = pageLoaded;
 function pageLoaded() {
 	if (!sessionStorage.getItem("cssIndex")) {
-		sessionStorage.setItem("cssIndex", 0);
+		sessionStorage.setItem("cssIndex", 2);
 	}
 	else {
 		var cssIndexNumber = Number(sessionStorage.getItem("cssIndex"));
 		if (cssIndexNumber != 0 && cssIndexNumber != 1 && cssIndexNumber != 2) {
-			sessionStorage.setItem("cssIndex", 0);
+			sessionStorage.setItem("cssIndex", 2);
 		}
 
 		loadCSSAccordingToCssIndex();
