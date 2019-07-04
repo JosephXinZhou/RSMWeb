@@ -41,12 +41,12 @@ else {
 window.onload = pageLoaded;
 function pageLoaded() {
 	if (!sessionStorage.getItem("cssIndex")) {
-		sessionStorage.setItem("cssIndex", 2);
+		sessionStorage.setItem("cssIndex", 0);
 	}
 	else {
 		var cssIndexNumber = Number(sessionStorage.getItem("cssIndex"));
 		if (cssIndexNumber != 0 && cssIndexNumber != 1 && cssIndexNumber != 2) {
-			sessionStorage.setItem("cssIndex", 2);
+			sessionStorage.setItem("cssIndex", 0);
 		}
 
 		loadCSSAccordingToCssIndex();
