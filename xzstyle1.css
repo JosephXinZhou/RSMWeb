@@ -433,12 +433,13 @@ h2.modal-header {
 	div.styles {
 		width: 100%;
 		overflow: hidden;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	h2.styles-header {
 		margin-left: 0px;
+		padding-left: 10px;
 		border-bottom: 1px solid rgb(221, 221, 221);
 	}
 
@@ -458,9 +459,41 @@ h2.modal-header {
 
 	div.skl-expr-edu-cert {
 		margin: 0;
+		padding-left: 0px;
+		padding-right: 0px;
+		background-color: white;
+	}
+	
+	h2 {
+		padding-left: 10px;
+	}
+	
+	div.skills-icons {
+    		padding: 0 0 0 10px;
+	}
+
+	ul.skills-detail {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	
+	div.mobile-developer {
 		padding-left: 10px;
 		padding-right: 10px;
-		background-color: white;
+	}
+
+	div.website-admin {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	div.fanshawe {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	div.mcp-comptia {
+		padding-left: 10px;
 	}
 
 	div.mcp-desc span.mcp-desc-subtext {
