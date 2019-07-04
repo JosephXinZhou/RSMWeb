@@ -347,6 +347,32 @@ h2.certification-header:before {
 	color: rgb(0, 150, 136);
 }
 
+div.ccna-rs {
+	overflow: auto;
+}
+
+p.ccna-rs-cer-date {
+	margin: 0;
+	padding: 0 0 0 33px;;
+	width: 130px;
+	float: left;
+	line-height: 100px;
+}
+
+div.ccna-rs-desc {
+	margin: 0;
+	padding: 0px 0px 0px 50px;
+	overflow: auto;
+	line-height: 100px;
+}
+
+img.ccna-rs-img {
+	margin: 0 8px 0 0;
+	width: 100px;
+	height: 100px;
+	float: right;
+}
+
 div.mcp {
 	overflow: auto;
 }
@@ -397,7 +423,7 @@ img.networkplus-img {
 	float: right;
 }
 
-div.mcp-desc span.mcp-desc-subtext, div.comptia-desc span.comptia-desc-subtext {
+div.mcp-desc span.mcp-desc-subtext, div.comptia-desc span.comptia-desc-subtext, div.ccna-rs-desc span.ccna-rs-desc-subtext {
 	font-size: 1em;
 	font-weight: normal;
 }
@@ -506,6 +532,11 @@ h2.modal-header {
 		padding-left: 20px;
 	}
 
+	p.ccna-rs-cer-date {
+		padding-left: 20px;
+		width: 100px;
+	}
+
 	p.mcp-cer-date {
 		padding-left: 20px;
 		width: 100px;
@@ -514,6 +545,18 @@ h2.modal-header {
 	p.comptia-cer-date {
 		padding-left: 20px;
 		width: 100px;
+	}
+
+	div.ccna-rs-desc {
+		padding-left: 35px;
+	}
+
+	div.ccna-rs-desc span.ccna-rs-desc-subtext {
+		display: none;
+	}
+
+	div.ccna-rs-desc span.modal-ccna-rs-desc-subtext {
+		display: inline;
 	}
 
 	div.mcp-desc {
@@ -631,6 +674,14 @@ h2.modal-header {
 		padding-right: 10px;
 	}
 
+	div.ccna-rs-desc span.ccna-rs-desc-subtext {
+		display: inline;
+	}
+
+	div.ccna-rs-desc span.modal-ccna-rs-desc-subtext {
+		display: none;
+	}
+
 	div.mcp-desc span.mcp-desc-subtext {
 		display: inline;
 	}
@@ -672,6 +723,10 @@ h2.modal-header {
 }
 
 @media (max-width: 580px) {
+	div.ccna-rs-desc span.ccna-rs-desc-subtext {
+		display: none;
+	}
+
 	div.mcp-desc span.mcp-desc-subtext {
 		display: none;
 	}
@@ -682,6 +737,10 @@ h2.modal-header {
 }
 
 @media (max-width: 440px) {
+	div.ccna-rs-desc span.ccna-rs-desc-text {
+		display: none;
+	}
+
 	div.mcp-desc span.mcp-desc-text {
 		display: none;
 	}
@@ -692,6 +751,10 @@ h2.modal-header {
 }
 
 @media (max-width: 300px) {
+	p.ccna-rs-cer-date {
+		display: none;
+	}
+
 	p.comptia-cer-date {
 		display: none;
 	}
