@@ -207,6 +207,7 @@ ul.skills-detail {
 div.skills-icons {
 	margin: 8px 0;
 	padding: 0 0 0 26px;
+	display: none;
 }
 
 img.skills-icon {
