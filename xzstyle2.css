@@ -177,7 +177,7 @@ div.skl-expr-edu-cert {
 	-webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.18), 0 4px 20px 0 rgba(0, 0, 0, 0.15);
-	position: absolute;
+	/*position: absolute;*/
 }
 
 div.skills {
